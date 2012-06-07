@@ -61,9 +61,33 @@ $app_list_strings = array (
     'Meetings' => '미팅 관리',
     'Tasks' => '업무내역 관리',
     'Calendar' => '일정 관리',
-    'Leads' => '관심고객 관리',
+      //BEGIN SUGARCRM flav!=sales ONLY
+      'Leads' => '관심고객 관리',
+      //END SUGARCRM flav!=sales ONLY
     'Currencies' => '화폐통화 관리',
+      //BEGIN SUGARCRM flav=pro ONLY
+      'Contracts'=>'계약 및 수주 관리',
+      'Quotes' => '견적서 관리',
+      'Products' => '상품 관리',
+      'ProductCategories' => '상품분류 관리',
+      'ProductTypes' => '상품종류 관리',
+      'ProductTemplates' => '상품목록 관리',
+      //END SUGARCRM flav=pro ONLY
+      //BEGIN SUGARCRM flav=pro || flav=sales ONLY
+      'Reports' => '보고서 관리',
+      'Reports_1'=>'보고서 관리',
+      //END SUGARCRM flav=pro || flav=sales ONLY
+      //BEGIN SUGARCRM flav=pro ONLY
+      'Forecasts' => 'Forecasts',
+      'ForecastSchedule'=>'Forecast Schedule',
+      'MergeRecords'=>'Merge Records',
+      'Quotas' => 'Quotas',
+      'Teams' => 'Teams',
+      'TeamNotices' => 'Team Notices',
+      'Manufacturers' => 'Manufacturers',
+      //END SUGARCRM flav=pro ONLY
     'Activities' => '영업활동 관리',
+      //BEGIN SUGARCRM flav!=sales ONLY
     'Bugs' => '결함 관리',
     'Feeds' => 'RSS',
     'iFrames'=>'내 사이트 관리',
@@ -73,14 +97,27 @@ $app_list_strings = array (
     'Schedulers'=>'일정 관리',
     'Project'=>'프로젝트 관리',
     'ProjectTask'=>'프로젝트 활동내역',
-    'Campaigns'=>'캠페인 관리',
-    'CampaignLog'=>'캠페인 기록 관리',
+    'Campaigns'=>'광고 및 메일발송관리',
+    'CampaignLog'=>'광고 기록 관리',
     'Documents'=>'계약서및 문서 관리',
     'DocumentRevisions'=>'Document Revisions',
+      //END SUGARCRM flav!=sales ONLY
     'Connectors'=>'Connectors',
     'Roles'=>'권한 관리',
+      //BEGIN SUGARCRM flav=following ONLY
+      'SugarFollowing'=>'SugarFollowing',
+      //END SUGARCRM flav=following ONLY
     'Notifications'=>'Notifications',
     'Sync'=>'동기화',
+      //BEGIN SUGARCRM flav=ent ONLY
+      'ReportMaker' => 'Advanced Reports',
+      'DataSets' => 'Data Formats',
+      'CustomQueries' => 'Custom Queries',
+      //END SUGARCRM flav=ent ONLY
+      //BEGIN SUGARCRM flav=pro ONLY
+      'WorkFlow' => 'Workflow Definitions',
+      'EAPM' => 'External Accounts',
+      //END SUGARCRM flav=pro ONLY
     'Users' => '사용자 관리',
     'Employees' => '직원 관리',
     'Administration' => '시스템관리자',
@@ -92,10 +129,12 @@ $app_list_strings = array (
     'EmailMarketing' => '이메일 마케팅 관리',
     'EmailTemplates' => '이메일 템플릿 관리',
     'SNIP' => "이메일 보관함 관리",
-    'ProspectLists' => '잠재고객 대상 관리',
+      //BEGIN SUGARCRM flav!=sales ONLY
+      'ProspectLists' => '잠재고객 대상 관리',
+      //END SUGARCRM flav!=sales ONLY
     'SavedSearch' => '저장된 검색결과 관리',
     'UpgradeWizard' => '업그레이드 마법사',
-    'Trackers' => 'Trackers',
+    'Trackers' => '사용추',
     'TrackerPerfs' => 'Tracker Performance',
     'TrackerSessions' => 'Tracker Sessions',
     'TrackerQueries' => 'Tracker Queries',
@@ -104,6 +143,14 @@ $app_list_strings = array (
     'SugarFeed'=>'Sugar Feed',
     'KBDocuments' => '관련지식 관리',
   'SugarFavorites'=>'즐겨찾기 관리',
+      //BEGIN SUGARCRM flav=dce ONLY
+      'DCEDataBases' => 'Databases',
+      'DCEClusters' => 'Clusters',
+      'DCEInstances' => 'Instances',
+      'DCETemplates' => 'Templates',
+      'DCEActions' => 'Actions',
+      'DCEReports'=>'DCE Reports',
+      //END SUGARCRM flav=dce ONLY
 
     'OAuthKeys' => 'OAuth Consumer Keys',
     'OAuthTokens' => 'OAuth Tokens',
@@ -112,7 +159,9 @@ $app_list_strings = array (
   'moduleListSingular' =>
   array (
     'Home' => '현황판',
-    'Dashboard' => '대쉬보드',
+      //BEGIN SUGARCRM flav!=sales ONLY
+      'Dashboard' => '대쉬보드',
+      //END SUGARCRM flav!=sales ONLY
     'Contacts' => '연락처',
     'Accounts' => '거래처',
     'Opportunities' => '영업기회',
@@ -123,8 +172,21 @@ $app_list_strings = array (
     'Meetings' => '미팅',
     'Tasks' => '업무내역',
     'Calendar' => '일정',
-    'Leads' => '관심고객',
+      //BEGIN SUGARCRM flav!=sales ONLY
+      'Leads' => '관심고객',
+      //END SUGARCRM flav!=sales ONLY
+      //BEGIN SUGARCRM flav=pro ONLY
+      'Contracts'=>'계약 및 수주',
+      'Quotes' => '견적서',
+      'Products' => '상품',
+      'Reports' => '보고서',
+      'Forecasts' => '예측보고',
+      'ForecastSchedule'=>'Forecast Schedule',
+      'Quotas' => 'Quota',
+      'Teams' => 'Team',
+      //END SUGARCRM flav=pro ONLY
     'Activities' => '활동내역',
+      //BEGIN SUGARCRM flav!=sales ONLY
     'Bugs' => '오류 및 장애',
     'Feeds' => 'RSS',
     'iFrames'=>'My Sites',
@@ -134,8 +196,16 @@ $app_list_strings = array (
     'Prospects' => 'Target',
     'Campaigns'=>'Campaign',
     'Documents'=>'Document',
+      //END SUGARCRM flav!=sales ONLY
     'SugarFollowing'=>'SugarFollowing',
     'Sync'=>'Sync',
+      //BEGIN SUGARCRM flav=ent ONLY
+      'ReportMaker' => ' SweetReport',
+      //END SUGARCRM flav=ent ONLY
+      //BEGIN SUGARCRM flav=pro ONLY
+      'WorkFlow' => 'Workflow',
+      'EAPM' => 'External Account',
+      //END SUGARCRM flav=pro ONLY
     'Users' => 'User',
   'SugarFavorites'=>'SugarFavorites'
 
@@ -238,11 +308,11 @@ $app_list_strings = array (
   array (
     '' => '',
     'Primary Decision Maker' => '최고 결정권자',
-    'Business Decision Maker' => '영업 결정권자',
-    'Business Evaluator' => '영업 평가자',
-    'Technical Decision Maker' => '기술 결정권자',
-    'Technical Evaluator' => '기술 평가자',
-    'Executive Sponsor' => '상위 스폰서',
+    'Business Decision Maker' => '사업 결정권자',
+    'Business Evaluator' => '사업 평가자',
+    'Technical Decision Maker' => '실무 결정권자',
+    'Technical Evaluator' => '실무 평가자',
+    'Executive Sponsor' => '고위 스폰서',
     'Influencer' => '고위간부 및 영향권자',
     'Other' => '기타',
   ),
@@ -378,6 +448,7 @@ $app_list_strings = array (
     'Inbound' => '수신',
     'Outbound' => '발신',
   ),
+    //BEGIN SUGARCRM flav!=sales ONLY
   'lead_status_dom' =>
   array (
     '' => '',
@@ -388,11 +459,13 @@ $app_list_strings = array (
     'Recycled' => '다시배정됨',
     'Dead' => '만료됨',
   ),
+    //END SUGARCRM flav!=sales ONLY
    'gender_list' =>
   array (
     'male' => '남성',
     'female' => '여성',
   ),
+    //BEGIN SUGARCRM flav!=sales ONLY
   //Note:  do not translate case_status_default_key
 //       it is the key for the default case_status_dom value
   'case_status_default_key' => 'New',
@@ -403,7 +476,7 @@ $app_list_strings = array (
     'Closed' => '완료',
     'Pending Input' => '응담대기',
     'Rejected' => '거절',
-    'Duplicate' => '사',
+    'Duplicate' => '사본',
   ),
   'case_priority_default_key' => 'P2',
   'case_priority_dom' =>
@@ -412,9 +485,13 @@ $app_list_strings = array (
     'P2' => '보통',
     'P3' => '낮음',
   ),
+    //END SUGARCRM flav!=sales ONLY
   'user_type_dom' =>
   array (
     'RegularUser' => '일반사용자',
+      //BEGIN SUGARCRM flav=sales ONLY
+      'UserAdministrator' => '관리권한 사용자',
+      //END SUGARCRM flav=sales ONLY
     'Administrator' => '관리자',
   ),
   'user_status_dom' =>
@@ -437,6 +514,7 @@ $app_list_strings = array (
       'NateOn' => '네이트온',
       'KakaoTalk' => '카카오톡',
   ),
+    //BEGIN SUGARCRM flav!=sales ONLY
     'project_task_priority_default' => 'Medium',
     'project_task_priority_options' => array (
         'High' => '높음',
@@ -477,6 +555,7 @@ $app_list_strings = array (
         'Low' => '낮음',
     ),
     'project_priority_default' => 'Medium',
+    //END SUGARCRM flav!=sales ONLY
   //Note:  do not translate record_type_default_key
 //       it is the key for the default record_type_module value
   'record_type_default_key' => 'Accounts',
@@ -485,18 +564,27 @@ $app_list_strings = array (
     '' => '',
     'Accounts' => '거래처',
     'Opportunities' => '영업기회',
+      //BEGIN SUGARCRM flav!=sales ONLY
     'Cases' => '요청사례',
     'Leads' => '관심고객',
+      //END SUGARCRM flav!=sales ONLY
     'Contacts' => '연락처', // cn (11/22/2005) added to support Emails
-
-
+      //BEGIN SUGARCRM flav=pro ONLY
+      'ProductTemplates' => 'Product',
+      'Quotes' => 'Quote',
+      //END SUGARCRM flav=pro ONLY
+      //BEGIN SUGARCRM flav!=sales ONLY
     'Bugs' => '오류 및 장애',
     'Project' => '프로젝트',
 
     'Prospects' => '잠재고객',
     'ProjectTask' => '프로젝트 활동내역',
+      //END SUGARCRM flav!=sales ONLY
+      //BEGIN SUGARCRM flav=int ONLY
 
+      'Project2' => 'Project2',
 
+      //END SUGARCRM flav=int ONLY
     'Tasks' => '업무내역',
 
   ),
@@ -505,41 +593,148 @@ $app_list_strings = array (
   array (
     'Accounts' => '거래처',
     'Contacts' => '연락처',
+    'Cases' => '요청사례',
+    'Emails' => '이메일',
+      //BEGIN SUGARCRM flav!=dce ONLY
     'Opportunities' => '영업기회',
     'Tasks' => '업무내역',
-    'Emails' => '이메일',
+      //BEGIN SUGARCRM flav=pro ONLY
+      'ProductTemplates' => 'Product Catalog',
+      'Quotes' => 'Quote',
+      'Products' => 'Product',
+      'Contracts' => 'Contract',
+      //END SUGARCRM flav=pro ONLY
 
+
+      //BEGIN SUGARCRM flav!=sales ONLY
     'Bugs' => '오류 및 장애',
     'Project' => '프로젝트',
     'ProjectTask' => '프로젝트 활동내역',
     'Prospects' => '잠재고객',
-    'Cases' => '요청사례',
     'Leads' => '관심고객',
-
+      //END SUGARCRM flav!=sales ONLY
     'Meetings' => '미팅',
     'Calls' => '전화상담',
+      //END SUGARCRM flav!=dce ONLY
+      //BEGIN SUGARCRM flav=dce ONLY
+      'DCEInstances' => 'Instance',
+      //END SUGARCRM flav=dce ONLY
   ),
 
   'parent_type_display' =>
   array (
     'Accounts' => '거래처',
     'Contacts' => '연락처',
-    'Tasks' => '업무내역',
-    'Opportunities' => '영업기회',
-
-
-
-    'Bugs' => '오류 및 장애',
     'Cases' => '요청사례',
+    'Tasks' => '업무내역',
+      //BEGIN SUGARCRM flav!=dce ONLY
+    'Opportunities' => '영업기회',
+      //BEGIN SUGARCRM flav=pro ONLY
+      'Products' => 'Product',
+      'Quotes' => 'Quote',
+      //END SUGARCRM flav=pro ONLY
+
+      //BEGIN SUGARCRM flav!=sales ONLY
+    'Bugs' => '오류 및 장애',
+
     'Leads' => '관심고객',
 
     'Project' => '프로젝트',
     'ProjectTask' => '프로젝트 활동내역',
+      //END SUGARCRM flav!=sales ONLY
 
     'Prospects' => '잠재고객',
-
+      //END SUGARCRM flav!=dce ONLY
+      //BEGIN SUGARCRM flav=dce ONLY
+      'DCEInstances' => 'Instance',
+      //END SUGARCRM flav=dce ONLY
   ),
+      //BEGIN SUGARCRM flav=pro ONLY
+    'product_status_default_key' => 'Ship',
+    'product_status_quote_key' => 'Quotes',
+    'product_status_dom' =>
+    array (
+        'Quotes' => '견적완료',
+        'Orders' => '주문완료',
+        'Ship' => '배송완료',
+    ),
 
+
+    'pricing_formula_default_key' => 'Fixed',
+    'pricing_formula_dom' =>
+    array (
+        'Fixed' => 'Fixed Price',
+        'ProfitMargin' => 'Profit Margin',
+        'PercentageMarkup' => 'Markup over Cost',
+        'PercentageDiscount' => 'Discount from List',
+        'IsList' => 'Same as List',
+    ),
+    'product_template_status_dom' =>
+    array (
+        'Available' => '제',
+        'Unavailable' => '품절',
+    ),
+    'tax_class_dom' =>
+    array (
+        'Taxable' => '과세품목',
+        'Non-Taxable' => '면세품',
+    ),
+    'support_term_dom' =>
+    array (
+        '+6 months' => '6개월',
+        '+1 year' => '1년',
+        '+2 years' => '2년',
+    ),
+
+    'quote_type_dom' =>
+    array (
+        'Quotes' => '견적서',
+        'Orders' => '주문',
+    ),
+    'default_quote_stage_key' => 'Draft',
+    'quote_stage_dom' =>
+    array (
+        'Draft' => '초기제안',
+        'Negotiation' => '제안및교섭',
+        'Delivered' => '전달',
+        'On Hold' => '보류',
+        'Confirmed' => '확인',
+        'Closed Accepted' => '계약성공',
+        'Closed Lost' => '계약실패',
+        'Closed Dead' => '계약만료',
+    ),
+    'default_order_stage_key' => 'Pending',
+    'order_stage_dom' =>
+    array (
+        'Pending' => '대기',
+        'Confirmed' => '확인',
+        'On Hold' => '보류',
+        'Shipped' => '배송됨',
+        'Cancelled' => '취소',
+    ),
+
+//Note:  do not translate quote_relationship_type_default_key
+//       it is the key for the default quote_relationship_type_dom value
+    'quote_relationship_type_default_key' => 'Primary Decision Maker',
+    'quote_relationship_type_dom' =>
+    array (
+        '' => '',
+        'Primary Decision Maker' => '최고 결정권자',
+        'Business Decision Maker' => '사업 결정권자',
+        'Business Evaluator' => '사업 평가자',
+        'Technical Decision Maker' => '실무 결정권자',
+        'Technical Evaluator' => '실무 평가자',
+        'Executive Sponsor' => '고위 스폰서',
+        'Influencer' => '고위간부 및 영향권자',
+        'Other' => '기타',
+    ),
+    'layouts_dom' =>
+    array (
+        'Standard' => '견적서',
+        'Invoice' => '계산',
+    ),
+    //END SUGARCRM flav=PRO ONLY
+    //BEGIN SUGARCRM flav!=sales ONLY
   'issue_priority_default_key' => 'Medium',
   'issue_priority_dom' =>
   array (
@@ -645,6 +840,10 @@ $app_list_strings = array (
     'Notes' => 'Notes',
     'Opportunities' => 'Opportunities',
     'Outlook Plugin' => 'Outlook Plugin',
+      //BEGIN SUGARCRM flav=pro ONLY
+      'Product Catalog' => 'Product Catalog',
+      'Products' => 'Products',
+      //END SUGARCRM flav=pro ONLY
     'Projects' => 'Projects',
     'Quotes' => 'Quotes',
     'Releases' => 'Releases',
@@ -685,7 +884,7 @@ $app_list_strings = array (
         'Quarterly' => '매분기',
         'Annually' => '매년',
         ),
-
+      //END SUGARCRM flav!=sales ONLY
   'notifymail_sendtype' =>
   array (
     'SMTP' => 'SMTP',
@@ -834,6 +1033,7 @@ $app_list_strings = array (
         'min' => '분',
         'hour' => '시',
         ),
+    //BEGIN SUGARCRM flav!=sales ONLY
     'forecast_schedule_status_dom' =>
     array (
     'Active' => '작동중',
@@ -877,6 +1077,7 @@ $app_list_strings = array (
     'nda'=>'기술정보 비밀유지 동의서(NDA)',
     'license'=>'라이센스 동의서',
   ),
+    //END SUGARCRM flav!=sales ONLY
     'dom_meeting_accept_options' =>
     array (
     'accept' => '수락',
@@ -890,6 +1091,383 @@ $app_list_strings = array (
     'tentative' => '예정',
     'none'      => '없음',
   ),
+    //BEGIN SUGARCRM flav=ent ONLY
+    'dataset_output_default_dom' =>
+    array (
+        'table' => 'Table',
+    ),
+    'report_maker_status_dom' =>
+    array (
+        'Single Module' => 'Single Module',
+        'Multi Module' => 'Multi Module',
+    ),
+    'report_align_dom' =>
+    array (
+        'left' => 'Left',
+        'center' => 'Center',
+        'right' => 'Right',
+    ),
+
+    'width_type_dom' =>
+    array (
+        '%' => 'Percent (%)',
+        'px' => 'Pixels (px)',
+    ),
+    'report_color_dom' =>
+    array (
+        '' => 'Default',
+        'black' => 'Black',
+        'green' => 'Green',
+        'blue' => 'Blue',
+        'red' => 'Red',
+        'white' => 'White',
+        'DarkGreen' => 'Dark Green',
+        'LightGray' => 'Light Gray',
+        'DodgerBlue' => 'Dodger Blue',
+        'LightBlue' => 'Light Blue',
+    ),
+    'font_size_dom' =>
+    array (
+        '-5' => 'Smaller (-5)',
+        '-4' => 'Smaller (-4)',
+        '-3' => 'Smaller (-3)',
+        '-2' => 'Smaller (-2)',
+        '-1' => 'Smaller (-1)',
+        'Default' => 'Default',
+        '1' => 'Larger (+1)',
+        '2' => 'Larger (+2)',
+        '3' => 'Larger (+3)',
+        '4' => 'Larger (+4)',
+        '5' => 'Larger (+5)',
+    ),
+    'query_type_dom' =>
+    array (
+        'Main Query' => 'Main Query',
+//  'Sub Query' => 'Sub Query',
+//  'Reverse Sub Query' => 'Reverse Sub Query',
+    ),
+    'query_column_type_dom' =>
+    array (
+        'Display' => 'Display',
+//  'Group By' => 'Group By',
+        'Calculation' => 'Calculation',
+    ),
+    'query_display_type_dom' =>
+    array (
+        'Default' => 'Default',
+        'Custom' => 'Custom',
+        'Hidden' => 'Hidden',
+    ),
+
+    'query_groupby_qualifier_dom' =>
+    array (
+        'Day' => 'Day',
+        'Week' => 'Week',
+        'Month' => 'Month',
+        'Quarter' => 'Quarter',
+        'Year' => 'Year',
+    ),
+
+    'query_groupby_qualifier_qty_dom' =>
+    array (
+        '1' => '1',
+        '2' => '2',
+        '3' => '3',
+        '4' => '4',
+        '5' => '5',
+        '6' => '6',
+        '7' => '7',
+        '8' => '8',
+        '9' => '9',
+        '10' => '10',
+        '12' => '12',
+        '18' => '18',
+        '24' => '24',
+    ),
+
+    'query_groupby_qualifier_start_dom' =>
+    array (
+        '0' => 'Now',
+        '-1' => '-1',
+        '-2' => '-2',
+        '-3' => '-3',
+        '-4' => '-4',
+        '-5' => '-5',
+        '-6' => '-6',
+        '-7' => '-7',
+        '-8' => '-8',
+        '-9' => '-9',
+        '-10' => '-10',
+        '12' => '-12',
+        '-18' => '-18',
+        '-24' => '-24',
+    ),
+    'query_groupby_calc_type_dom' =>
+    array (
+        'SUM' => 'SUM',
+        'AVG' => 'AVG',
+        'COUNT' => 'Count',
+        'STDDEV' => 'Standard Deviation',
+        'VARIANCE' => 'Variance',
+//  'Custom' => 'Custom',
+    ),
+    'query_groupby_type_dom' =>
+    array (
+        'Field' => 'Standard Field',
+        'Time' => 'Time Interval',
+//  'Custom' => 'Custom Group By',
+    ),
+
+    'query_groupby_axis_dom' =>
+    array (
+        'Rows' => 'Rows (Y-Axis)',
+        'Columns' => 'Columns (X-Axis)',
+    ),
+
+    'query_calc_calc_type_dom' =>
+    array (
+        'SUM' => 'Sum (Total)',
+        'AVG' => 'Average',
+        'MAX' => 'Maximum',
+        'MIN' => 'Minimum',
+        'COUNT' => 'Count',
+        'STDDEV' => 'Standard Deviation',
+        'VARIANCE' => 'Variance',
+    ),
+    'query_calc_type_dom' =>
+    array (
+        'Standard' => 'Standard',
+//  'Sub-Query' => 'Sub Query',
+        'Math' => 'Math Calc',
+    ),
+
+    'query_calc_oper_dom' =>
+    array (
+        '+' => '(+) Plus',
+        '-' => '(-) Minus',
+        '*' => '(X) Multiplied By',
+        '/' => '(/) Divided By',
+    ),
+
+    'query_calc_leftright_type_dom' =>
+    array (
+        'Field' => 'Field',
+        'Value' => 'Value',
+        'Group' => 'Group',
+    ),
+
+
+    'dataset_layout_type_dom' =>
+    array (
+        'Column' => 'Column',
+        //'Row' => 'Row',
+    ),
+
+    'custom_layout_dom' =>
+    array (
+        'Disabled' => 'Disabled',
+        'Enabled' => 'Enabled',
+    ),
+    'dataset_att_display_type_dom' =>
+    array (
+        'Normal' => 'Normal',
+        'Scalar' => 'Scalar',
+    ),
+    'dataset_att_format_type_dom' =>
+    array (
+        'Text' => 'Text',
+        'Accounting' => 'Accounting',
+        'Date' => 'Date',
+        'Datetime' => 'Datetime',
+    ),
+    'dataset_att_format_type_scalar_dom' =>
+    array (
+        'Year' => 'Year',
+        'Quarter' => 'Quarter',
+        'Month' => 'Month',
+        'Week' => 'Week',
+        'Day' => 'Day',
+    ),
+    'dataset_style_dom' =>
+    array (
+        'normal' => 'Normal',
+        'bold' => 'Bold',
+        'italic' => 'Italic',
+    ),
+      //END SUGARCRM flav=ent ONLY
+    //BEGIN SUGARCRM flav=pro ONLY
+    'query_calc_oper_dom' =>
+    array (
+        '+' => '(+) Plus',
+        '-' => '(-) Minus',
+        '*' => '(X) Multiplied By',
+        '/' => '(/) Divided By',
+    ),
+    'wflow_type_dom' =>
+    array (
+        'Normal' => 'When record saved',
+        'Time' => 'After time elapses',
+    ),
+    'mselect_type_dom' =>
+    array (
+        'Equals' => 'Is',
+        'in' => 'Is One of',
+    ),
+    'mselect_multi_type_dom' =>
+    array (
+        'in' => 'Is One of',
+        'not_in' => 'Is Not One of',
+    ),
+    'cselect_type_dom' =>
+    array (
+        'Equals' => 'Equals',
+        'Does not Equal' => 'Does Not Equal',
+    ),
+    'dselect_type_dom' =>
+    array (
+        'Equals' => 'Equals',
+        'Less Than' => 'Less Than',
+        'More Than' => 'More Than',
+        'Does not Equal' => 'Does not Equal',
+    ),
+    'bselect_type_dom' =>
+    array (
+        'bool_true' => 'Yes',
+        'bool_false' => 'No',
+    ),
+    'bopselect_type_dom' =>
+    array (
+        'Equals' => 'Equals',
+    ),
+    'tselect_type_dom' =>
+    array (
+        '0'     =>  '0 hours',
+        '14440' => '4 hours',
+        '28800' => '8 hours',
+        '43200' => '12 hours',
+        '86400' => '1 day',
+        '172800' => '2 days',
+        '259200' => '3 days',
+        '345600' => '4 days',
+        '432000' => '5 days',
+        '604800' => '1 week',
+        '1209600' => '2 weeks',
+        '1814400' => '3 weeks',
+        '2592000' => '30 days',
+        '5184000' => '60 days',
+        '7776000' => '90 days',
+        '10368000' => '120 days',
+        '12960000' => '150 days',
+        '15552000' => '180 days',
+    ),
+    'dtselect_type_dom' =>
+    array (
+        'More Than' => 'was more than',
+        'Less Than' => 'is less than',
+    ),
+    'wflow_alert_type_dom' =>
+    array (
+        'Email' => 'Email',
+        'Invite' => 'Invite',
+    ),
+    'wflow_source_type_dom' =>
+    array (
+        'Normal Message' => 'Normal Message',
+        'Custom Template' => 'Custom Template',
+        'System Default' => 'System Default',
+    ),
+    'wflow_user_type_dom' =>
+    array (
+        'current_user' => 'Current Users',
+        'rel_user' => 'Related Users',
+        'rel_user_custom' => 'Related Custom User',
+        'specific_team' => 'Specific Team',
+        'specific_role' => 'Specific Role',
+        'specific_user' => 'Specific User',
+    ),
+    'wflow_array_type_dom' =>
+    array (
+        'future' => 'New Value',
+        'past' => 'Old Value',
+    ),
+    'wflow_relate_type_dom' =>
+    array (
+        'Self' => 'User',
+        'Manager' => "User's Manager",
+    ),
+    'wflow_address_type_dom' =>
+    array (
+        'to' => 'To:',
+        'cc' => 'CC:',
+        'bcc' => 'BCC:',
+    ),
+    'wflow_address_type_invite_dom' =>
+    array (
+        'to' => 'To:',
+        'cc' => 'CC:',
+        'bcc' => 'BCC:',
+        'invite_only' => '(Invite Only)',
+    ),
+    'wflow_address_type_to_only_dom' =>
+    array (
+        'to' => 'To:',
+    ),
+    'wflow_action_type_dom' =>
+    array (
+        'update' => 'Update Record',
+        'update_rel' => 'Update Related Record',
+        'new' => 'New Record',
+    ),
+    'wflow_action_datetime_type_dom' =>
+    array (
+        'Triggered Date' => 'Triggered Date',
+        'Existing Value' => 'Existing Value',
+    ),
+    'wflow_set_type_dom' =>
+    array (
+        'Basic' => 'Basic Options',
+        'Advanced' => 'Advanced Options',
+    ),
+    'wflow_adv_user_type_dom' =>
+    array (
+        'assigned_user_id' => 'User assigned to triggered record',
+        'modified_user_id' => 'User who last modified triggered record',
+        'created_by' => 'User who created triggered record',
+        'current_user' => 'Logged-in User',
+    ),
+    'wflow_adv_team_type_dom' =>
+    array (
+        'team_id' => 'Current Team of triggered Record',
+        'current_team' => 'Team of Logged-in User',
+    ),
+    'wflow_adv_enum_type_dom' =>
+    array (
+        'retreat' => 'Move dropdown backwards by ',
+        'advance' => 'Move dropdown forwards by ',
+    ),
+    'wflow_record_type_dom' =>
+    array (
+        'All' => 'New and Updated Records',
+        'New' => 'New Records Only',
+        'Update' => 'Updated Records Only',
+    ),
+    'wflow_rel_type_dom' =>
+    array (
+        'all' => 'All related',
+        //'first' => 'The first related',
+        'filter' => 'Filter related',
+    ),
+    'wflow_relfilter_type_dom' =>
+    array (
+        'all' => 'all related',
+        'any' => 'any related',
+    ),
+    'wflow_fire_order_dom' => array('alerts_actions'=>'Alerts then Actions',
+        'actions_alerts'=>'Actions then Alerts'),
+
+
+
+      //END SUGARCRM flav=pro ONLY
     'duration_intervals' => array('0'=>'00',
                                     '15'=>'15',
                                     '30'=>'30',
@@ -934,6 +1512,7 @@ $app_list_strings = array (
     'Mailbox' => 'Mailbox',
 ),
 */
+      //BEGIN SUGARCRM flav!=sales ONLY
 //prospect list type dom
   'prospect_list_type_dom' =>
   array (
@@ -980,6 +1559,7 @@ $app_list_strings = array (
     'Leads'=>'관심고객',
     'Accounts'=>'거래처',
   ),
+    //END SUGARCRM flav!=sales ONLY
   'merge_operators_dom' => array (
     'like'=>'Contains',
     'exact'=>'Exactly',
@@ -1002,13 +1582,54 @@ $app_list_strings = array (
   'custom_fields_merge_dup_dom'=> array (
         0=>'Disabled',
         1=>'Enabled',
+      //BEGIN SUGARCRM flav=pro ONLY
+        2=>'In Filter',
+        3=>'Default Selected Filter',
+        4=>'Filter Only',
+      //END SUGARCRM flav=pro ONLY
   ),
 
   'navigation_paradigms' => array(
         'm'=>'모듈',
         'gm'=>'그룹화된 모듈',
   ),
+      //BEGIN SUGARCRM flav=pro ONLY
 
+    // Contracts module enums
+
+    'contract_status_dom' => array (
+        'notstarted' => 'Not Started',
+        'inprogress' => 'In Progress',
+        'signed' => 'Signed',
+    ),
+
+    'contract_payment_frequency_dom' => array (
+        'monthly' => 'Monthly',
+        'quarterly' => 'Quarterly',
+        'halfyearly' => 'Half yearly',
+        'yearly' => 'Yearly',
+    ),
+
+    'contract_expiration_notice_dom' => array (
+        '1' => '1 Day',
+        '3' => '3 Days',
+        '5' => '5 Days',
+        '7' => '1 Week',
+        '14' => '2 Weeks',
+        '21' => '3 Weeks',
+        '31' => '1 Month',
+    ),
+
+    'oc_status_dom' =>
+    array (
+        '' => '',
+        'Active' => 'Active',
+        'Inactive' => 'Inactive',
+    ),
+
+
+      //END SUGARCRM flav=pro ONLY
+      //BEGIN SUGARCRM flav!=sales ONLY
 
     'projects_priority_options' => array (
         'high'      => '높음',
@@ -1021,6 +1642,7 @@ $app_list_strings = array (
         'inprogress'    => '진행중',
         'completed'     => '완료',
     ),
+      //END SUGARCRM flav!=sales ONLY
     // strings to pass to Flash charts
     'chart_strings' => array (
         'expandlegend'      => 'Expand Legend',
@@ -1038,6 +1660,112 @@ $app_list_strings = array (
         'print'       => 'Print',
         'pieWedgeName'      => 'sections',
     ),
+    //BEGIN SUGARCRM flav=pro ONLY
+    'pipeline_chart_dom' => array (
+        'fun'   => 'Funnel',
+        'hbar'  => 'Horizontal Bar',
+    ),
+    //END SUGARCRM flav=pro ONLY
+    //BEGIN SUGARCRM flav=dce ONLY
+    'server_status_list' => array (
+        'active' => 'Active',
+        'maintenance' => 'Maintenance',
+        'rebooting' => 'Rebooting',
+    ),
+    'instance_status_list' => array (
+        'new' => 'New',
+        'live' => 'Live',
+        'in_progress' => 'In Progress',
+        'archived' => 'Archived',
+    ),
+    'action_status_list' => array (
+        'queued' => 'Queued',
+        'started' => 'Started',
+        'pending' => 'Pending',
+        'suspended' => 'Suspended',
+        'completed' => 'Completed',
+        'done' => 'Done',
+        'failed' => 'Failed',
+    ),
+    'action_priority_list' => array (
+        '3' => 'Urgent',
+        '2' => 'High',
+        '1' => 'Medium',
+        '0' => 'Low',
+    ),
+    'action_type_list' => array (
+        'create' => 'Create',
+        'convert' => 'Convert',
+        'clone' => 'Clone',
+        'recover' => 'Recover',
+        'archive' => 'Archive',
+        'delete' => 'Delete',
+        'toggle_on' => 'Enable Support User',
+        'toggle_off' => 'Disable Support User',
+        'upgrade_live' => 'Upgrade Live',
+        'upgrade_test' => 'Upgrade Test',
+        'key' => 'Update Key',
+        'report' => 'DCE Report',
+    ),
+    'status_list' => array (
+        'active' => 'Active',
+        'innactive' => 'Innactive',
+        'pending_approval' => 'Pending Approval',
+        'dummy' => 'Place Holder',
+    ),
+    'production_duration_default_key' => '365',
+    'production_duration_list' => array (
+        '365' => '1 year',
+    ),
+    'production_extended_duration_default_key' => '0',
+    'production_extended_duration_list' => array (
+        '0' => '',
+        '365' => '1 year',
+    ),
+    'convert_status_list' => array (
+        'no' => 'Not Converted',
+        'yes' => 'Converted',
+        'error' => 'Could Not Convert',
+    ),
+
+    'evaluation_duration_default_key' => '30',
+    'evaluation_duration_list' => array (
+        '15' => '15 days',
+        '30' => '30 days',
+    ),
+    'evaluation_extended_duration_default_key' => '0',
+    'evaluation_extended_duration_list' => array (
+        '0' => '',
+        '15' => '15 days',
+        '30' => '30 days',
+    ),
+    'instance_type_list' => array (
+        'evaluation' => 'Evaluation',
+        'production' => 'Production',
+    ),
+    'url_format_list' => array (
+        'URL/Instance_Name' => '(URL)/(Instance Name)',
+        'Instance_Name.URL' => '(Instance Name).(URL)',
+    ),
+    //Note:  do not translate dceinstance_contact_relationship_type_default_key
+//       it is the key for the default dceinstance_contact_relationship_type_dom value
+    'dceinstance_contact_relationship_type_default_key' => 'Primary Decision Maker',
+    'dceinstance_contact_relationship_type_dom' =>
+    array (
+        '' => '',
+        'Primary Decision Maker' => 'Primary Decision Maker',
+        'Technical Decision Maker' => 'Technical Decision Maker',
+    ),
+    //Note:  do not translate dceinstance_user_relationship_type_default_key
+//       it is the key for the default dceinstance_user_relationship_type_dom value
+    'dceinstance_user_relationship_type_default_key' => 'Sales Rep',
+    'dceinstance_user_relationship_type_dom' =>
+    array (
+        '' => '',
+        'Sales Rep' => 'Sales Rep',
+        'Support Rep' => 'Support Rep',
+    ),
+      //END SUGARCRM flav=dce ONLY
     'release_status_dom' =>
     array (
         'Active' => '작동중',
@@ -1128,10 +1856,10 @@ $app_list_strings = array (
 $app_strings = array (
   'LBL_MY_AREA_LINKS' => 'My area links: ' /*for 508 compliance fix*/,
   'LBL_GETTINGAIR' => 'Getting Air' /*for 508 compliance fix*/,
-  'LBL_WELCOMEBAR' => 'Welcome' /*for 508 compliance fix*/,
+  'LBL_WELCOMEBAR' => '환영합니다' /*for 508 compliance fix*/,
   'LBL_ADVANCEDSEARCH' => '세부 검색' /*for 508 compliance fix*/,
   'LBL_MOREDETAIL' => '상세정보' /*for 508 compliance fix*/,
-  'LBL_EDIT_INLINE' => 'Edit Inline' /*for 508 compliance fix*/,
+  'LBL_EDIT_INLINE' => '바로 수정' /*for 508 compliance fix*/,
   'LBL_VIEW_INLINE' => '보기' /*for 508 compliance fix*/,
   'LBL_BASIC_SEARCH' => '검색' /*for 508 compliance fix*/,
   'LBL_PROJECT_MINUS' => '제거' /*for 508 compliance fix*/,
@@ -1223,7 +1951,7 @@ $app_strings = array (
     'LBL_ROUTING_WITH_TEMPLATE'             => 'with template',
   'NTC_OVERWRITE_ADDRESS_PHONE_CONFIRM' => 'This record currently contains values in the Office Phone and Address fields. To overwrite these values with the following Office Phone and Address of the Account that you selected, click "OK". To keep the current values, click "Cancel".',
   'LBL_DROP_HERE' => '[Drop Here]',
-    'LBL_EMAIL_ACCOUNTS_EDIT'               => 'Edit',
+    'LBL_EMAIL_ACCOUNTS_EDIT'               => '수정',
     'LBL_EMAIL_ACCOUNTS_GMAIL_DEFAULTS'     => 'Prefill Gmail&#153; Defaults',
     'LBL_EMAIL_ACCOUNTS_NAME'               => 'Name',
     'LBL_EMAIL_ACCOUNTS_OUTBOUND'           => 'Outgoing Mail Server Properties',
@@ -1243,7 +1971,7 @@ $app_strings = array (
   'LBL_EMAIL_ACCOUNTS_SUBTITLE'           => 'Set up Mail Accounts to view incoming emails from your email accounts.',
   'LBL_EMAIL_ACCOUNTS_OUTBOUND_SUBTITLE'  => 'Provide SMTP mail server information to use for outgoing email in Mail Accounts.',
     'LBL_EMAIL_ADD'                         => 'Add Address',
-
+    'LBL_EMAIL_ADDRESS'                     => '이메일',
     'LBL_EMAIL_ADDRESS_BOOK_ADD'            => 'Done',
     'LBL_EMAIL_ADDRESS_BOOK_CLEAR'          => 'Clear',
     'LBL_EMAIL_ADDRESS_BOOK_ADD_TO'         => 'To:',
@@ -1399,6 +2127,11 @@ $app_strings = array (
     'LBL_EMAIL_IMPORT_EMAIL'                => 'Import to Sugar',
     'LBL_EMAIL_IMPORT_SETTINGS'                => 'Import Settings',
     'LBL_EMAIL_INVALID'                     => 'Invalid',
+    //BEGIN SUGARCRM flav=pro ONLY
+    'LBL_EMAIL_LIST_RENAME_TITLE'           => 'Rename Mailing List',
+    'LBL_EMAIL_LIST_RENAME_DESC '           => 'Enter a new name for this mailing list',
+    'LBL_EMAIL_CONFIRM_DELETE_LIST'         => 'Remove these entries from your mailing lists?',
+    //END SUGARCRM flav=pro ONLY
     'LBL_EMAIL_LOADING'                     => 'Loading...',
     'LBL_EMAIL_MARK'                        => 'Mark',
     'LBL_EMAIL_MARK_FLAGGED'                => 'As Flagged',
@@ -1410,7 +2143,7 @@ $app_strings = array (
     'LBL_EMAIL_MENU_ADD_FOLDER'             => 'Create Folder',
     'LBL_EMAIL_MENU_COMPOSE'                => 'Compose to',
     'LBL_EMAIL_MENU_DELETE_FOLDER'          => 'Delete Folder',
-    'LBL_EMAIL_MENU_EDIT'                   => 'Edit',
+    'LBL_EMAIL_MENU_EDIT'                   => '수정',
     'LBL_EMAIL_MENU_EMPTY_TRASH'            => 'Empty Trash',
     'LBL_EMAIL_MENU_SYNCHRONIZE'            => 'Synchronize',
     'LBL_EMAIL_MENU_CLEAR_CACHE'            => 'Clear cache files',
@@ -1616,7 +2349,27 @@ $app_strings = array (
     'LBL_CLOSE_ACTIVITY_CONFIRM' => "#module#모듈을 정말로 닫겠습니까?",
     'LBL_CLOSE_ACTIVITY_REMEMBER' => "이 메세지를 다음에 표시하지 않습니다.",
     'LBL_INVALID_FILE_EXTENSION' => '올바르지 않은 파일확장자명입니다.',
-
+    //BEGIN SUGARCRM flav=pro ONLY
+    'LBL_LIST_TEAM' => 'Team',
+    'LBL_TEAM' => 'Team:',
+    'LBL_TEAMS' =>'Teams',
+    'LBL_TEAM_ID'=>'Team ID:',
+    'LBL_TEAM_SET_ID' => 'Team Set ID',
+    'LBL_EXPORT_TEAM_SET_ID' => 'Teams',
+    'LBL_TEAM_SET'=>'Team Set',
+    'LBL_SEARCH_UNAVAILABLE' => 'Search unavailable, please try again later.',
+    'ERR_NO_PRIMARY_TEAM_SPECIFIED' => 'No Primary Team specified',
+    'LBL_REMOVE_PRIMARY_TEAM_ERROR' => 'Error attempting to remove primary team id [{0}] for [{1}] module with id [{2}]',
+    //END SUGARCRM flav=pro ONLY
+    //BEGIN SUGARCRM flav=ent ONLY
+    'LBL_QUERY_VALID'=>'Valid',
+    'LBL_QUERY_ERROR'=>'Error!',
+    'LBL_QUERY_CHILD'=>'Valid Sub-Query',
+    'LBL_CLOSE_BUTTON_KEY' => 'C',
+    'LBL_CLOSE_BUTTON_LABEL' => 'Close',
+    'ERROR_EXAMINE_MSG' => '  Please examine the error message below:',
+    'NO_QUERY_SELECTED' => 'The data format you have selected does not contain a query.  Please select a custom query for this data format.',
+    //END SUGARCRM flav=ent ONLY
 
     'ERR_AJAX_LOAD'     => '다음과 같은 문제가 발생하였습니다.',
     'ERR_AJAX_LOAD_FAILURE'     => '요청하신 작업을 처리하는 중에 문제가 발생하였습니다. 나중에 다시 시도해 주십시오.',
@@ -1662,75 +2415,88 @@ $app_strings = array (
     'ERR_DB_FAIL' => '디비를 처리하는 중 문제가 발생했습니다. 자세한 내용은 sugarcrm.log 파일을 확인하여 주십시오.',
     'ERR_EXTERNAL_API_403' => '파일권한이 없습니다. 선택된 파일 형식은 지원되지 않습니다.',
 
+    //BEGIN SUGARCRM flav=pro ONLY
+    //Lotus Live specific error messages
+    'ERR_EXTERNAL_API_LOTUS_LIVE_CONFLICT' => '같은 이름의 파일이 존재합니다.',
+    //END SUGARCRM flav=pro ONLY
 
-    'LBL_ACCOUNT'=>'Account',
-    'LBL_OLD_ACCOUNT_LINK'=>'Old Account',
-    'LBL_ACCOUNTS'=>'Accounts',
-    'LBL_ACTIVITIES_SUBPANEL_TITLE'=>'Activities',
+    'LBL_ACCOUNT'=>'거래처',
+    'LBL_OLD_ACCOUNT_LINK'=>'이전 거래처',
+    'LBL_ACCOUNTS'=>'거래처',
+    'LBL_ACTIVITIES_SUBPANEL_TITLE'=>'활동내역',
     'LBL_ACCUMULATED_HISTORY_BUTTON_KEY' => 'H',
-    'LBL_ACCUMULATED_HISTORY_BUTTON_LABEL' => 'View Summary',
-    'LBL_ACCUMULATED_HISTORY_BUTTON_TITLE' => 'View Summary',
+    'LBL_ACCUMULATED_HISTORY_BUTTON_LABEL' => '요약보기',
+    'LBL_ACCUMULATED_HISTORY_BUTTON_TITLE' => '요약보기',
     'LBL_ADD_BUTTON_KEY' => 'A',
     'LBL_ADD_BUTTON_TITLE' => '추가하기',
     'LBL_ADD_BUTTON' => '추가하기',
     'LBL_ADD_DOCUMENT' => '문서 추가하기',
     'LBL_REPLACE_BUTTON' => 'Replace',
     'LBL_ADD_TO_PROSPECT_LIST_BUTTON_KEY' => 'L',
-    'LBL_ADD_TO_PROSPECT_LIST_BUTTON_LABEL' => 'Add To Target List',
-    'LBL_ADD_TO_PROSPECT_LIST_BUTTON_TITLE' => 'Add To Target List',
-    'LBL_ADDITIONAL_DETAILS_CLOSE_TITLE' => 'Click to Close',
-    'LBL_ADDITIONAL_DETAILS_CLOSE' => 'Close',
-    'LBL_ADDITIONAL_DETAILS' => 'Additional Details',
-    'LBL_ADMIN' => 'Admin',
+    'LBL_ADD_TO_PROSPECT_LIST_BUTTON_LABEL' => '잠재고객으로 추가하기',
+    'LBL_ADD_TO_PROSPECT_LIST_BUTTON_TITLE' => '잠재고객으로 추가하기',
+    'LBL_ADDITIONAL_DETAILS_CLOSE_TITLE' => '창닫기',
+    'LBL_ADDITIONAL_DETAILS_CLOSE' => '닫기',
+    'LBL_ADDITIONAL_DETAILS' => '추가세부정보',
+    'LBL_ADMIN' => '관리자모드',
+//BEGIN SUGARCRM flav=sales ONLY
+    'LBL_USER_ADMIN' => '관리권한 사용자',
+//END SUGARCRM flav=sales ONLY
     'LBL_ALT_HOT_KEY' => '',
     'LBL_ARCHIVE' => '보관하기',
-    'LBL_ASSIGNED_TO_USER'=>'Assigned to User',
-    'LBL_ASSIGNED_TO' => 'Assigned to:',
-    'LBL_BACK' => 'Back',
-    'LBL_BILL_TO_ACCOUNT'=>'Bill to Account',
-    'LBL_BILL_TO_CONTACT'=>'Bill to Contact',
-    'LBL_BILLING_ADDRESS'=>'Billing Address',
+    'LBL_ASSIGNED_TO_USER'=>'담당자에게 배정됨',
+    'LBL_ASSIGNED_TO' => '배정된 담당자:',
+    'LBL_BACK' => '뒤로',
+    'LBL_BILL_TO_ACCOUNT'=>'거래처에 청구',
+    'LBL_BILL_TO_CONTACT'=>'연락처에 청구',
+    'LBL_BILLING_ADDRESS'=>'청구지 주소',
+    //BEGIN SUGARCRM flav=dce ONLY
+    'LBL_BROWSER_TITLE' => 'Sugar DCE',
+    //END SUGARCRM flav=dce ONLY
+    'LBL_QUICK_CREATE_TITLE' => '빠른 추가',
+    //BEGIN SUGARCRM flav!=dce ONLY
     'LBL_BROWSER_TITLE' => 'SugarCRM - Commercial Open Source CRM',
-    'LBL_BUGS'=>'Bugs',
+    //END SUGARCRM flav!=dce ONLY
+    'LBL_BUGS'=>'결함',
     'LBL_BY' => 'by',
-    'LBL_CALLS'=>'Calls',
-    'LBL_CALL'=>'Call',
+    'LBL_CALLS'=>'전화상담',
+    'LBL_CALL'=>'전화상담',
     'LBL_CAMPAIGNS_SEND_QUEUED' => 'Send Queued Campaign Emails',
     'LBL_SUBMIT_BUTTON_LABEL' => 'Submit',
     'LBL_CASE'=>'Case',
     'LBL_CASES'=>'Cases',
     'LBL_CHANGE_BUTTON_KEY' => 'G',
-    'LBL_CHANGE_PASSWORD' => 'Change password',
-    'LBL_CHANGE_BUTTON_LABEL' => 'Change',
-    'LBL_CHANGE_BUTTON_TITLE' => 'Change',
+    'LBL_CHANGE_PASSWORD' => '비밀번호 변경하기',
+    'LBL_CHANGE_BUTTON_LABEL' => '변경하기',
+    'LBL_CHANGE_BUTTON_TITLE' => '변경하기',
     'LBL_CHARSET' => 'UTF-8',
-    'LBL_CHECKALL' => 'Check All',
-    'LBL_CITY' => 'City',
+    'LBL_CHECKALL' => '모두 선택하기',
+    'LBL_CITY' => '시',
     'LBL_CLEAR_BUTTON_KEY' => 'C',
-    'LBL_CLEAR_BUTTON_LABEL' => 'Clear',
-    'LBL_CLEAR_BUTTON_TITLE' => 'Clear',
-    'LBL_CLEARALL' => 'Clear All',
-    'LBL_CLOSE_BUTTON_TITLE' =>'Close',
+    'LBL_CLEAR_BUTTON_LABEL' => '지우기',
+    'LBL_CLEAR_BUTTON_TITLE' => '지우기',
+    'LBL_CLEARALL' => '전체 선택취소',
+    'LBL_CLOSE_BUTTON_TITLE' =>'닫기',
     'LBL_CLOSE_BUTTON_KEY'=>'Q',
-    'LBL_CLOSE_WINDOW'=>'Close Window',
+    'LBL_CLOSE_WINDOW'=>'창닫기',
     'LBL_CLOSEALL_BUTTON_KEY' => 'Q',
-    'LBL_CLOSEALL_BUTTON_LABEL' => 'Close All',
-    'LBL_CLOSEALL_BUTTON_TITLE' => 'Close All',
-    'LBL_CLOSE_AND_CREATE_BUTTON_LABEL' => 'Close and Create New',
-    'LBL_CLOSE_AND_CREATE_BUTTON_TITLE' => 'Close and Create New',
+    'LBL_CLOSEALL_BUTTON_LABEL' => '전체 닫기',
+    'LBL_CLOSEALL_BUTTON_TITLE' => '전체 닫기',
+    'LBL_CLOSE_AND_CREATE_BUTTON_LABEL' => '완료하고 새 정보 입력하기',
+    'LBL_CLOSE_AND_CREATE_BUTTON_TITLE' => '완료하고 새 정보 입력하기',
     'LBL_CLOSE_AND_CREATE_BUTTON_KEY' => 'C',
     'LBL_OPEN_ITEMS' => 'Open Items:',
     'LBL_COMPOSE_EMAIL_BUTTON_KEY' => 'L',
-    'LBL_COMPOSE_EMAIL_BUTTON_LABEL' => 'Compose Email',
-    'LBL_COMPOSE_EMAIL_BUTTON_TITLE' => 'Compose Email',
-    'LBL_SEARCH_DROPDOWN_YES'=>'Yes',
-    'LBL_SEARCH_DROPDOWN_NO'=>'No',
-    'LBL_CONTACT_LIST' => 'Contact List',
-    'LBL_CONTACT'=>'Contact',
-    'LBL_CONTACTS'=>'Contacts',
+    'LBL_COMPOSE_EMAIL_BUTTON_LABEL' => '이메일 작성하기',
+    'LBL_COMPOSE_EMAIL_BUTTON_TITLE' => '이메일 작성하기',
+    'LBL_SEARCH_DROPDOWN_YES'=>'예',
+    'LBL_SEARCH_DROPDOWN_NO'=>'아니요',
+    'LBL_CONTACT_LIST' => '연락처 목록',
+    'LBL_CONTACT'=>'연락처',
+    'LBL_CONTACTS'=>'연락처',
     'LBL_CONTRACTS'=>'Contracts',
-    'LBL_COUNTRY' => 'Country:',
-    'LBL_CREATE_BUTTON_LABEL' => 'Create',
+    'LBL_COUNTRY' => '국가:',
+    'LBL_CREATE_BUTTON_LABEL' => '생성하기',
     'LBL_CREATED_BY_USER'=>'Created by User',
     'LBL_CREATED_USER'=>'Created by User',
     'LBL_CREATED_ID' => 'Created By Id',
@@ -1738,21 +2504,21 @@ $app_strings = array (
     'LBL_CURRENT_USER_FILTER' => 'My Items:',
     'LBL_CURRENCY'=>'Currency:',
     'LBL_DOCUMENTS'=>'Documents',
-    'LBL_DATE_ENTERED' => 'Date Created:',
-    'LBL_DATE_MODIFIED' => 'Date Modified:',
-    'LBL_EDIT_BUTTON' => 'Edit',
-    'LBL_DUPLICATE_BUTTON' => 'Duplicate',
-    'LBL_DELETE_BUTTON' => 'Delete',
-    'LBL_DELETE' => 'Delete',
-    'LBL_DELETED'=>'Deleted',
+    'LBL_DATE_ENTERED' => '생성일자:',
+    'LBL_DATE_MODIFIED' => '수정일자:',
+    'LBL_EDIT_BUTTON' => '수정하기',
+    'LBL_DUPLICATE_BUTTON' => '복제하기',
+    'LBL_DELETE_BUTTON' => '삭제하기',
+    'LBL_DELETE' => '삭제하기',
+    'LBL_DELETED'=>'삭제',
     'LBL_DIRECT_REPORTS'=>'Direct Reports',
     'LBL_DONE_BUTTON_KEY' => 'X',
-    'LBL_DONE_BUTTON_LABEL' => 'Done',
-    'LBL_DONE_BUTTON_TITLE' => 'Done',
-    'LBL_DST_NEEDS_FIXIN' => 'The application requires a Daylight Saving Time fix to be applied.  Please go to the <a href="index.php?module=Administration&action=DstFix">Repair</a> link in the Admin console and apply the Daylight Saving Time fix.',
+    'LBL_DONE_BUTTON_LABEL' => '완료하기',
+    'LBL_DONE_BUTTON_TITLE' => '완료하기',
+    'LBL_DST_NEEDS_FIXIN' => '현재 시스템에 일광절약시간을 적용하셔야 합니다. 다음 <a href="index.php?module=Administration&action=DstFix">링크</a>를 클릭하여 일광절약시간을 올바르게 적용해주세요.',
     'LBL_EDIT_AS_NEW_BUTTON_LABEL' => 'Edit As New',
     'LBL_EDIT_AS_NEW_BUTTON_TITLE' => 'Edit As New',
-    'LBL_FAVORITES' => 'Favorites',
+    'LBL_FAVORITES' => '즐겨찾기목록',
     'LBL_FILTER_MENU_BY' => 'Filter Menu By',
     'LBL_VCARD' => 'vCard',
     'LBL_EMPTY_VCARD' => 'Please select a vCard file',
@@ -1768,115 +2534,116 @@ $app_strings = array (
     'LBL_EMAIL_PDF_BUTTON_LABEL' => 'Email as PDF',
     'LBL_EMAIL_PDF_BUTTON_TITLE' => 'Email as PDF',
     'LBL_EMAILS'=>'Emails',
-    'LBL_EMPLOYEES' => 'Employees',
+    'LBL_EMPLOYEES' => '직원관리',
     'LBL_ENTER_DATE' => 'Enter Date',
-    'LBL_EXPORT_ALL' => 'Export All',
-    'LBL_EXPORT' => 'Export',
-    'LBL_FAVORITES_FILTER' => 'My Favorites:',
-    'LBL_GO_BUTTON_LABEL' => 'Go',
+    'LBL_EXPORT_ALL' => '전체자료 내보내기',
+    'LBL_EXPORT' => '자료 내보내기',
+    'LBL_FAVORITES_FILTER' => '내 즐겨찾기 목록:',
+    'LBL_GO_BUTTON_LABEL' => '이동하기',
     'LBL_GS_HELP' => 'The fields in this module used in this search appear above.  The highlighted text matches your search criteria.',
     'LBL_HIDE'=>'Hide',
     'LBL_ID'=>'ID',
-    'LBL_IMPORT' => 'Import',
+    'LBL_IMPORT' => '자료 가져오기',
     'LBL_IMPORT_STARTED' => 'Import Started: ',
-    'LBL_MISSING_CUSTOM_DELIMITER' => 'Must specify a custom delimiter.',
-    'LBL_LAST_VIEWED' => 'Recently Viewed',
-    'LBL_SHOW_LESS' => 'Show Less',
-    'LBL_SHOW_MORE' => 'Show More',
-    'LBL_TODAYS_ACTIVITIES' => 'Today\'s Activities',
-    'LBL_LEADS'=>'Leads',
+    'LBL_MISSING_CUSTOM_DELIMITER' => '구분자를 반드시 선택하셔야합니다.',
+    'LBL_LAST_VIEWED' => '최근에 본 항목',
+    'LBL_SHOW_LESS' => '메뉴 접기',
+    'LBL_SHOW_MORE' => '메뉴 펼치기',
+    'LBL_TODAYS_ACTIVITIES' => '오늘의 활동내역',
+    'LBL_LEADS'=>'관심고객',
     'LBL_LESS' => 'less',
     'LBL_CAMPAIGN' => 'Campaign:',
     'LBL_CAMPAIGNS' => 'Campaigns',
     'LBL_CAMPAIGNLOG' => 'CampaignLog',
     'LBL_CAMPAIGN_CONTACT'=>'Campaigns',
     'LBL_CAMPAIGN_ID'=>'campaign_id',
-    'LBL_SITEMAP'=>'Sitemap',
-    'LBL_THEME'=>'Theme:',
+    'LBL_SITEMAP'=>'사이트',
+    'LBL_THEME'=>'테마:',
     'LBL_THEME_PICKER'=>'Page Style',
-    'LBL_THEME_PICKER_IE6COMPAT_CHECK' => 'Warning: Internet Explorer 6 is not supported for the selected theme. Click OK to select it anyways or Cancel to select a different theme.',
+    'LBL_THEME_PICKER_IE6COMPAT_CHECK' => '경고: 선택하신 테마는 인터넷 익스플로어 6버젼을 지원하지 않습니다. 그래도 진행하시려면 확인을 눌러주시고 아니면 취소후 다른 테마를 선택해주세요.',
     'LBL_FOUND_IN_RELEASE'=>'Found In Release',
     'LBL_FIXED_IN_RELEASE'=>'Fixed In Release',
-    'LBL_LIST_ACCOUNT_NAME' => 'Account Name',
-    'LBL_LIST_ASSIGNED_USER' => 'User',
-    'LBL_LIST_CONTACT_NAME' => 'Contact Name',
+    'LBL_LIST_ACCOUNT_NAME' => '거래처이름',
+    'LBL_LIST_ASSIGNED_USER' => '담당자',
+    'LBL_LIST_CONTACT_NAME' => '연락처이름',
     'LBL_LIST_CONTACT_ROLE' => 'Contact Role',
-    'LBL_LIST_DATE_ENTERED'=>'Date Created',
-    'LBL_LIST_EMAIL' => 'Email',
-    'LBL_LIST_NAME' => 'Name',
-    'LBL_LIST_OF' => 'of',
-    'LBL_LIST_PHONE' => 'Phone',
+    'LBL_LIST_DATE_ENTERED'=>'생성일자',
+    'LBL_LIST_EMAIL' => '이메일',
+    'LBL_LIST_NAME' => '이름',
+    'LBL_LIST_OF' => '전체',
+    'LBL_LIST_PHONE' => '전화번호',
     'LBL_LIST_RELATED_TO' => '연관된 정보',
     'LBL_LIST_USER_NAME' => 'User Name',
-    'LBL_LISTVIEW_MASS_UPDATE_CONFIRM' => 'Are you sure you want to update the entire list?',
-    'LBL_LISTVIEW_NO_SELECTED' => 'Please select at least 1 record to proceed.',
-    'LBL_LISTVIEW_TWO_REQUIRED' => 'Please select at least 2 records to proceed.',
-    'LBL_LISTVIEW_LESS_THAN_TEN_SELECT' => 'Please select less than 10 records to proceed.',
-    'LBL_LISTVIEW_ALL' => 'All',
-    'LBL_LISTVIEW_NONE' => 'Deselect All',
-    'LBL_LISTVIEW_OPTION_CURRENT' => 'Select This Page',
-    'LBL_LISTVIEW_OPTION_ENTIRE' => 'Select All',
-    'LBL_LISTVIEW_OPTION_SELECTED' => 'Selected Records',
-    'LBL_LISTVIEW_SELECTED_OBJECTS' => 'Selected: ',
+    'LBL_LISTVIEW_MASS_UPDATE_CONFIRM' => '정말로 전체 자료를 변경하겠습니까?',
+    'LBL_LISTVIEW_NO_SELECTED' => '한개이상의 자료를 선택해주세요.',
+    'LBL_LISTVIEW_TWO_REQUIRED' => '두개이상의 자료를 선택해주세요.',
+    'LBL_LISTVIEW_LESS_THAN_TEN_SELECT' => '10개이하의 자료를 선택해주세요.',
+    'LBL_LISTVIEW_ALL' => '전체',
+    'LBL_LISTVIEW_NONE' => '모든선택취소',
+    'LBL_LISTVIEW_OPTION_CURRENT' => '현재페이지 선택하기',
+    'LBL_LISTVIEW_OPTION_ENTIRE' => '전체 선택하기',
+    'LBL_LISTVIEW_OPTION_SELECTED' => '선택된 자료',
+    'LBL_LISTVIEW_SELECTED_OBJECTS' => '선택된 항목수: ',
 
-    'LBL_LOCALE_NAME_EXAMPLE_FIRST' => 'David',
-    'LBL_LOCALE_NAME_EXAMPLE_LAST' => 'Livingstone',
+    'LBL_LOCALE_NAME_EXAMPLE_FIRST' => '길동',
+    'LBL_LOCALE_NAME_EXAMPLE_LAST' => '홍',
     'LBL_LOCALE_NAME_EXAMPLE_SALUTATION' => 'Dr.',
     'LBL_LOCALE_NAME_EXAMPLE_TITLE' => 'Code Monkey Extraordinaire',
-    'LBL_LOGIN_TO_ACCESS' => 'Please sign in to access this area.',
-    'LBL_LOGOUT' => 'Log Out',
-    'LBL_PROFILE' => 'Profile',
+    'LBL_LOGIN_TO_ACCESS' => '이 페이지를 열기 위해서는 로그인이 필요합니다.',
+    'LBL_LOGOUT' => '로그아웃',
+    'LBL_PROFILE' => '개인설정관리',
     'LBL_MAILMERGE_KEY' => 'M',
     'LBL_MAILMERGE' => 'Mail Merge',
-    'LBL_MASS_UPDATE' => 'Mass Update',
-    'LBL_NO_MASS_UPDATE_FIELDS_AVAILABLE' => 'There are no fields available for the Mass Update operation',
-    'LBL_OPT_OUT_FLAG_PRIMARY' => 'Opt out Primary Email',
-    'LBL_MEETINGS'=>'Meetings',
-    'LBL_MEETING'=>'Meeting',
-    'LBL_MEMBERS'=>'Members',
-    'LBL_MEMBER_OF'=>'Member Of',
+    'LBL_MASS_UPDATE' => '전체 수정하기',
+    'LBL_NO_MASS_UPDATE_FIELDS_AVAILABLE' => '전체 수정할 항목이 존재하지 않습니다.',
+    'LBL_OPT_OUT_FLAG_PRIMARY' => '수신거부된 메인 이메일 주소',
+    'LBL_MEETINGS'=>'미팅',
+    'LBL_MEETING'=>'미팅',
+    'LBL_MEMBERS'=>'구성원들',
+    'LBL_MEMBER_OF'=>'다음의 구성원',
     'LBL_MODIFIED_BY_USER'=>'Modified by User',
     'LBL_MODIFIED_USER'=>'Modified by User',
     'LBL_MODIFIED' => 'Modified by',
     'LBL_MODIFIED_NAME'=>'Modified By Name',
     'LBL_MODIFIED_ID'=>'Modified By Id',
-    'LBL_MORE' => 'More',
-    'LBL_MY_ACCOUNT' => 'My Settings',
-    'LBL_NAME' => 'Name',
+    'LBL_MORE' => '더보기',
+    'LBL_MY_ACCOUNT' => '내 설정보기',
+    'LBL_NAME' => '이름',
     'LBL_NEW_BUTTON_KEY' => 'N',
-    'LBL_NEW_BUTTON_LABEL' => 'Create',
-    'LBL_NEW_BUTTON_TITLE' => 'Create',
-    'LBL_NEXT_BUTTON_LABEL' => 'Next',
-    'LBL_NONE' => '--None--',
-    'LBL_NOTES'=>'Notes',
+    'LBL_NEW_BUTTON_LABEL' => '새자료 추가하기',
+    'LBL_NEW_BUTTON_TITLE' => '새자료 추가하기',
+    'LBL_NEXT_BUTTON_LABEL' => '다음',
+    'LBL_NONE' => '--없음--',
+    'LBL_NOTES'=>'메모',
     'LBL_OPENALL_BUTTON_KEY' => 'O',
-    'LBL_OPENALL_BUTTON_LABEL' => 'Open All',
-    'LBL_OPENALL_BUTTON_TITLE' => 'Open All',
+    'LBL_OPENALL_BUTTON_LABEL' => '모두열기',
+    'LBL_OPENALL_BUTTON_TITLE' => '모두열기',
     'LBL_OPENTO_BUTTON_KEY' => 'T',
     'LBL_OPENTO_BUTTON_LABEL' => 'Open To: ',
     'LBL_OPENTO_BUTTON_TITLE' => 'Open To:',
-    'LBL_OPPORTUNITIES'=>'Opportunities',
-    'LBL_OPPORTUNITY_NAME' => 'Opportunity Name',
-    'LBL_OPPORTUNITY'=>'Opportunity',
-    'LBL_OR' => 'OR',
-    'LBL_LOWER_OR' => 'or',
-    'LBL_PANEL_ASSIGNMENT' => 'Other',
-    'LBL_PANEL_ADVANCED' => 'More Information',
+    'LBL_OPPORTUNITIES'=>'영업기회',
+    'LBL_OPPORTUNITY_NAME' => '영업기회명',
+    'LBL_OPPORTUNITY'=>'영업기회',
+    'LBL_OR' => '또는',
+    'LBL_LOWER_OR' => '또는',
+    'LBL_PANEL_ASSIGNMENT' => '기타',
+    'LBL_PANEL_ADVANCED' => '추가정보',
     'LBL_PARENT_TYPE' => 'Parent Type',
     'LBL_PERCENTAGE_SYMBOL' => '%',
     'LBL_PHASE' => 'Range',
-    'LBL_POSTAL_CODE' => 'Postal Code:',
-    'LBL_PRIMARY_ADDRESS_CITY' => 'Primary Address City:',
-    'LBL_PRIMARY_ADDRESS_COUNTRY' => 'Primary Address Country:',
-    'LBL_PRIMARY_ADDRESS_POSTALCODE' => 'Primary Address Postal Code:',
-    'LBL_PRIMARY_ADDRESS_STATE' => 'Primary Address State:',
-    'LBL_PRIMARY_ADDRESS_STREET_2' => 'Primary Address Street 2:',
-    'LBL_PRIMARY_ADDRESS_STREET_3' => 'Primary Address Street 3:',
-    'LBL_PRIMARY_ADDRESS_STREET' => 'Primary Address Street:',
-    'LBL_PRIMARY_ADDRESS' => 'Primary Address:',
+    'LBL_PICTURE_FILE' => '사진',
+    'LBL_POSTAL_CODE' => '우편번호:',
+    'LBL_PRIMARY_ADDRESS_CITY' => '시:',
+    'LBL_PRIMARY_ADDRESS_COUNTRY' => '국가:',
+    'LBL_PRIMARY_ADDRESS_POSTALCODE' => '우편번호:',
+    'LBL_PRIMARY_ADDRESS_STATE' => '도:',
+    'LBL_PRIMARY_ADDRESS_STREET_2' => '나머지주소2:',
+    'LBL_PRIMARY_ADDRESS_STREET_3' => '나머지주소3:',
+    'LBL_PRIMARY_ADDRESS_STREET' => '나머지주소:',
+    'LBL_PRIMARY_ADDRESS' => '기본주소:',
 
-	'LBL_BILLING_STREET'=> 'Street:',
-	'LBL_SHIPPING_STREET'=> 'Street:',
+	'LBL_BILLING_STREET'=> '청구지주소:',
+	'LBL_SHIPPING_STREET'=> '배송지주소:',
 
     'LBL_PRODUCT_BUNDLES'=>'Product Bundles',
     'LBL_PRODUCT_BUNDLES'=>'Product Bundles',
@@ -1891,49 +2658,49 @@ $app_strings = array (
     'LBL_QUOTES'=>'Quotes',
 
     'LBL_RELATED' => 'Related',
-    'LBL_RELATED_INFORMATION' => 'Related Information',
-    'LBL_RELATED_RECORDS' => 'Related Records',
-    'LBL_REMOVE' => 'Remove',
-    'LBL_REPORTS_TO' => 'Reports To',
+    'LBL_RELATED_INFORMATION' => '연관된 정보',
+    'LBL_RELATED_RECORDS' => '연관된 자료목록',
+    'LBL_REMOVE' => '삭제하기',
+    'LBL_REPORTS_TO' => '다음 담당자에게 보고',
     'LBL_REQUIRED_SYMBOL' => '*',
-    'LBL_REQUIRED_TITLE' => 'Indicates required field',
-    'LBL_EMAIL_DONE_BUTTON_LABEL' => 'Done',
+    'LBL_REQUIRED_TITLE' => '필수항목입니다.',
+    'LBL_EMAIL_DONE_BUTTON_LABEL' => '완료',
     'LBL_SAVE_AS_BUTTON_KEY' => 'A',
-    'LBL_SAVE_AS_BUTTON_LABEL' => 'Save As',
-    'LBL_SAVE_AS_BUTTON_TITLE' => 'Save As',
+    'LBL_SAVE_AS_BUTTON_LABEL' => '다음이름으로 저장',
+    'LBL_SAVE_AS_BUTTON_TITLE' => '다음이름으로 저장',
     'LBL_FULL_FORM_BUTTON_KEY' => 'L',
-    'LBL_FULL_FORM_BUTTON_LABEL' => 'Full Form',
-    'LBL_FULL_FORM_BUTTON_TITLE' => 'Full Form',
+    'LBL_FULL_FORM_BUTTON_LABEL' => '전체화면으로 작성하기',
+    'LBL_FULL_FORM_BUTTON_TITLE' => '전체화면으로 작성하기',
     'LBL_SAVE_NEW_BUTTON_KEY' => 'V',
-    'LBL_SAVE_NEW_BUTTON_LABEL' => 'Save & Create New',
-    'LBL_SAVE_NEW_BUTTON_TITLE' => 'Save & Create New',
-    'LBL_SAVE_OBJECT' => 'Save {0}',
+    'LBL_SAVE_NEW_BUTTON_LABEL' => '저장 후 새 자료입력',
+    'LBL_SAVE_NEW_BUTTON_TITLE' => '저장 후 새 자료입력',
+    'LBL_SAVE_OBJECT' => '저장 {0}',
     'LBL_SEARCH_BUTTON_KEY' => 'Q',
-    'LBL_SEARCH_BUTTON_LABEL' => 'Search',
-    'LBL_SEARCH_BUTTON_TITLE' => 'Search',
-    'LBL_SEARCH' => 'Search',
-    'LBL_SEARCH_MORE' => 'more',
-    'LBL_SEE_ALL' => 'See All',
-    'LBL_UPLOAD_IMAGE_FILE_INVALID' => 'Invalid file format, only image file can be uploaded.',
+    'LBL_SEARCH_BUTTON_LABEL' => '검색하기',
+    'LBL_SEARCH_BUTTON_TITLE' => '검색하기',
+    'LBL_SEARCH' => '검색:',
+    'LBL_SEARCH_MORE' => '더보기',
+    'LBL_SEE_ALL' => '전체보기',
+    'LBL_UPLOAD_IMAGE_FILE_INVALID' => '올바르지 않은 형식입니다. 이미지 파일만 가능합니다.',
     'LBL_SELECT_BUTTON_KEY' => 'T',
-    'LBL_SELECT_BUTTON_LABEL' => 'Select',
-    'LBL_SELECT_BUTTON_TITLE' => 'Select',
+    'LBL_SELECT_BUTTON_LABEL' => '기존자료 선택하기',
+    'LBL_SELECT_BUTTON_TITLE' => '기존자료 선택하기',
     'LBL_SELECT_TEAMS_KEY' => 'Z',
-    'LBL_SELECT_TEAMS_LABEL' => 'Add Team(s)',
-    'LBL_SELECT_TEAMS_TITLE' => 'Add Teams(s)',
+    'LBL_SELECT_TEAMS_LABEL' => '부서 추가하기',
+    'LBL_SELECT_TEAMS_TITLE' => '부서 추가하기',
     'LBL_BROWSE_DOCUMENTS_BUTTON_KEY' => 'B',
-    'LBL_BROWSE_DOCUMENTS_BUTTON_LABEL' => 'Browse Documents',
-    'LBL_BROWSE_DOCUMENTS_BUTTON_TITLE' => 'Browse Documents',
+    'LBL_BROWSE_DOCUMENTS_BUTTON_LABEL' => '문서확인하기',
+    'LBL_BROWSE_DOCUMENTS_BUTTON_TITLE' => '문서확인하기',
     'LBL_SELECT_CONTACT_BUTTON_KEY' => 'T',
-    'LBL_SELECT_CONTACT_BUTTON_LABEL' => 'Select Contact',
-    'LBL_SELECT_CONTACT_BUTTON_TITLE' => 'Select Contact',
-    'LBL_GRID_SELECTED_FILE' => 'selected file',
-    'LBL_GRID_SELECTED_FILES' => 'selected files',
+    'LBL_SELECT_CONTACT_BUTTON_LABEL' => '연락처 선택하기',
+    'LBL_SELECT_CONTACT_BUTTON_TITLE' => '연락처 선택하기',
+    'LBL_GRID_SELECTED_FILE' => '선택된 파일',
+    'LBL_GRID_SELECTED_FILES' => '선택된 파일목록',
     'LBL_SELECT_REPORTS_BUTTON_LABEL' => 'Select from Reports',
     'LBL_SELECT_REPORTS_BUTTON_TITLE' => 'Select Reports',
     'LBL_SELECT_USER_BUTTON_KEY' => 'U',
-    'LBL_SELECT_USER_BUTTON_LABEL' => 'Select User',
-    'LBL_SELECT_USER_BUTTON_TITLE' => 'Select User',
+    'LBL_SELECT_USER_BUTTON_LABEL' => '사용자 선택하기',
+    'LBL_SELECT_USER_BUTTON_TITLE' => '사용자 선택하',
     // Clear buttons take up too many keys, lets default the relate and collection ones to be empty
     'LBL_ACCESSKEY_CLEAR_RELATE_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_RELATE_TITLE' => 'Clear Selection',
@@ -1942,63 +2709,63 @@ $app_strings = array (
     'LBL_ACCESSKEY_CLEAR_COLLECTION_TITLE' => 'Clear Selection',
     'LBL_ACCESSKEY_CLEAR_COLLECTION_LABEL' => 'Clear Selection',
     'LBL_ACCESSKEY_SELECT_FILE_KEY' => 'F',
-    'LBL_ACCESSKEY_SELECT_FILE_TITLE' => 'Select File',
-    'LBL_ACCESSKEY_SELECT_FILE_LABEL' => 'Select File',
+    'LBL_ACCESSKEY_SELECT_FILE_TITLE' => '파일 선택하기',
+    'LBL_ACCESSKEY_SELECT_FILE_LABEL' => '파일 선택하기',
     'LBL_ACCESSKEY_CLEAR_FILE_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_FILE_TITLE' => 'Clear File',
     'LBL_ACCESSKEY_CLEAR_FILE_LABEL' => 'Clear File',
 
 
     'LBL_ACCESSKEY_SELECT_USERS_KEY' => 'U',
-    'LBL_ACCESSKEY_SELECT_USERS_TITLE' => 'Select User',
-    'LBL_ACCESSKEY_SELECT_USERS_LABEL' => 'Select User',
+    'LBL_ACCESSKEY_SELECT_USERS_TITLE' => '사용자 선택하기',
+    'LBL_ACCESSKEY_SELECT_USERS_LABEL' => '사용자 선택하기',
     'LBL_ACCESSKEY_CLEAR_USERS_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_USERS_TITLE' => 'Clear User',
     'LBL_ACCESSKEY_CLEAR_USERS_LABEL' => 'Clear User',
     'LBL_ACCESSKEY_SELECT_ACCOUNTS_KEY' => 'A',
-    'LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE' => 'Select Account',
-    'LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL' => 'Select Account',
+    'LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE' => '거래처 선택하기',
+    'LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL' => '거래처 선택하기',
     'LBL_ACCESSKEY_CLEAR_ACCOUNTS_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_ACCOUNTS_TITLE' => 'Clear Account',
     'LBL_ACCESSKEY_CLEAR_ACCOUNTS_LABEL' => 'Clear Account',
     'LBL_ACCESSKEY_SELECT_CAMPAIGNS_KEY' => 'M',
-    'LBL_ACCESSKEY_SELECT_CAMPAIGNS_TITLE' => 'Select Campaign',
-    'LBL_ACCESSKEY_SELECT_CAMPAIGNS_LABEL' => 'Select Campaign',
+    'LBL_ACCESSKEY_SELECT_CAMPAIGNS_TITLE' => '홍보캠페인 선택하기',
+    'LBL_ACCESSKEY_SELECT_CAMPAIGNS_LABEL' => '홍보캠페인 선택하기',
     'LBL_ACCESSKEY_CLEAR_CAMPAIGNS_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_CAMPAIGNS_TITLE' => 'Clear Campaign',
     'LBL_ACCESSKEY_CLEAR_CAMPAIGNS_LABEL' => 'Clear Campaign',
     'LBL_ACCESSKEY_SELECT_CONTACTS_KEY' => 'C',
-    'LBL_ACCESSKEY_SELECT_CONTACTS_TITLE' => 'Select Contact',
-    'LBL_ACCESSKEY_SELECT_CONTACTS_LABEL' => 'Select Contact',
+    'LBL_ACCESSKEY_SELECT_CONTACTS_TITLE' => '연락처 선택하기',
+    'LBL_ACCESSKEY_SELECT_CONTACTS_LABEL' => '연락처 선택하기',
     'LBL_ACCESSKEY_CLEAR_CONTACTS_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_CONTACTS_TITLE' => 'Clear Contact',
     'LBL_ACCESSKEY_CLEAR_CONTACTS_LABEL' => 'Clear Contact',
     'LBL_ACCESSKEY_SELECT_TEAMSET_KEY' => 'Z',
-    'LBL_ACCESSKEY_SELECT_TEAMSET_TITLE' => 'Select Team',
-    'LBL_ACCESSKEY_SELECT_TEAMSET_LABEL' => 'Select Team',
+    'LBL_ACCESSKEY_SELECT_TEAMSET_TITLE' => '부서 선택하기',
+    'LBL_ACCESSKEY_SELECT_TEAMSET_LABEL' => '부서 선택하기',
     'LBL_ACCESSKEY_CLEAR_TEAMS_KEY' => ' ',
     'LBL_ACCESSKEY_CLEAR_TEAMS_TITLE' => 'Clear Team',
     'LBL_ACCESSKEY_CLEAR_TEAMS_LABEL' => 'Clear Team',
-    'LBL_SERVER_RESPONSE_RESOURCES' => 'Resources used to construct this page (queries, files)',
-    'LBL_SERVER_RESPONSE_TIME_SECONDS' => 'seconds.',
-    'LBL_SERVER_RESPONSE_TIME' => 'Server response time:',
+    'LBL_SERVER_RESPONSE_RESOURCES' => '이 페이지를 생성하는 사용된 자원들(queries, files)',
+    'LBL_SERVER_RESPONSE_TIME_SECONDS' => '초.',
+    'LBL_SERVER_RESPONSE_TIME' => '서버 반응 시간:',
     'LBL_SERVER_MEMORY_BYTES' => 'bytes',
-    'LBL_SERVER_MEMORY_USAGE' => 'Server Memory Usage: {0} ({1})',
+    'LBL_SERVER_MEMORY_USAGE' => '사용된 서버 메모리: {0} ({1})',
     'LBL_SERVER_MEMORY_LOG_MESSAGE' => 'Usage: - module: {0} - action: {1}',
-    'LBL_SERVER_PEAK_MEMORY_USAGE' => 'Server Peak Memory Usage: {0} ({1})',
-    'LBL_SHIP_TO_ACCOUNT'=>'Ship to Account',
-    'LBL_SHIP_TO_CONTACT'=>'Ship to Contact',
-    'LBL_SHIPPING_ADDRESS'=>'Shipping Address',
-    'LBL_SHORTCUTS' => 'Shortcuts',
-    'LBL_SHOW'=>'Show',
+    'LBL_SERVER_PEAK_MEMORY_USAGE' => '최대 사용된 서버 메모리: {0} ({1})',
+    'LBL_SHIP_TO_ACCOUNT'=>'거래처로 배송',
+    'LBL_SHIP_TO_CONTACT'=>'연락처로 배송',
+    'LBL_SHIPPING_ADDRESS'=>'배송지주소',
+    'LBL_SHORTCUTS' => '단축키',
+    'LBL_SHOW'=>'보기',
     'LBL_SQS_INDICATOR' => '',
-    'LBL_STATE' => 'State:',
-    'LBL_STATUS_UPDATED'=>'Your Status for this event has been updated!',
-    'LBL_STATUS'=>'Status:',
-    'LBL_STREET'=>'Street',
-    'LBL_SUBJECT' => 'Subject',
+    'LBL_STATE' => '도:',
+    'LBL_STATUS_UPDATED'=>'현재 당신의 상태가 변경되었습니다.',
+    'LBL_STATUS'=>'상태:',
+    'LBL_STREET'=>'동:',
+    'LBL_SUBJECT' => '제목',
 
-    'LBL_INBOUNDEMAIL_ID' => 'Inbound Email ID',
+    'LBL_INBOUNDEMAIL_ID' => '수신 이메일 ID',
 
     /* The following version of LBL_SUGAR_COPYRIGHT is intended for Sugar Open Source only. */
 
@@ -2011,182 +2778,187 @@ $app_strings = array (
     'LBL_SUGAR_COPYRIGHT_SUB' => '&copy; 2004-2012 <a href="http://www.sugarcrm.com" target="_blank" class="copyRightLink">SugarCRM Inc.</a> All Rights Reserved.<br />SugarCRM is a trademark of SugarCRM, Inc. All other company and product names may be trademarks of the respective companies with which they are associated.',
 
 
-    'LBL_SYNC' => 'Sync',
-    'LBL_SYNC' => 'Sync',
-    'LBL_TABGROUP_ALL' => 'All',
-    'LBL_TABGROUP_ACTIVITIES' => 'Activities',
-    'LBL_TABGROUP_COLLABORATION' => 'Collaboration',
-    'LBL_TABGROUP_HOME' => 'Home',
-    'LBL_TABGROUP_MARKETING' => 'Marketing',
-    'LBL_TABGROUP_MY_PORTALS' => 'My Sites',
-    'LBL_TABGROUP_OTHER' => 'Other',
-    'LBL_TABGROUP_REPORTS' => 'Reports',
-    'LBL_TABGROUP_SALES' => 'Sales',
-    'LBL_TABGROUP_SUPPORT' => 'Support',
-    'LBL_TABGROUP_TOOLS' => 'Tools',
-    'LBL_TASKS'=>'Tasks',
-    'LBL_TEAMS_LINK'=>'Teams',
-    'LBL_THEME_COLOR'=>'Color',
-    'LBL_THEME_FONT'=>'Font',
+    'LBL_SYNC' => '동기화',
+    'LBL_SYNC' => '동기화',
+    'LBL_TABGROUP_ALL' => '전체',
+    'LBL_TABGROUP_ACTIVITIES' => '활동내역',
+    'LBL_TABGROUP_COLLABORATION' => '협업',
+    'LBL_TABGROUP_HOME' => '시작',
+    'LBL_TABGROUP_MARKETING' => '마케팅',
+    'LBL_TABGROUP_MY_PORTALS' => '내 현황판',
+    'LBL_TABGROUP_OTHER' => '기타',
+    'LBL_TABGROUP_REPORTS' => '보고서',
+    'LBL_TABGROUP_SALES' => '영업',
+    'LBL_TABGROUP_SUPPORT' => '지원',
+    'LBL_TABGROUP_TOOLS' => '도구',
+    'LBL_TASKS'=>'업무내역',
+    'LBL_TEAMS_LINK'=>'부서',
+    'LBL_THEME_COLOR'=>'색상',
+    'LBL_THEME_FONT'=>'폰트',
     'LBL_THOUSANDS_SYMBOL' => 'K',
     'LBL_TRACK_EMAIL_BUTTON_KEY' => 'K',
-    'LBL_TRACK_EMAIL_BUTTON_LABEL' => 'Archive Email',
-    'LBL_TRACK_EMAIL_BUTTON_TITLE' => 'Archive Email',
-    'LBL_UNAUTH_ADMIN' => 'Unauthorized access to administration',
-    'LBL_UNDELETE_BUTTON_LABEL' => 'Undelete',
-    'LBL_UNDELETE_BUTTON_TITLE' => 'Undelete',
-    'LBL_UNDELETE_BUTTON' => 'Undelete',
-    'LBL_UNDELETE' => 'Undelete',
-    'LBL_UNSYNC' => 'Unsync',
-    'LBL_UPDATE' => 'Update',
+    'LBL_TRACK_EMAIL_BUTTON_LABEL' => '이메일 보관하기',
+    'LBL_TRACK_EMAIL_BUTTON_TITLE' => '이메일 보관하기',
+    'LBL_UNAUTH_ADMIN' => '관리자모드 접속 승인이 필요합니다.',
+    'LBL_UNDELETE_BUTTON_LABEL' => '삭제 취소',
+    'LBL_UNDELETE_BUTTON_TITLE' => '삭제 취소',
+    'LBL_UNDELETE_BUTTON' => '삭제 취소',
+    'LBL_UNDELETE' => '삭제 취소',
+    'LBL_UNSYNC' => '동기화 취소',
+    'LBL_UPDATE' => '변경하',
     'LBL_USER_LIST' => 'User List',
     'LBL_USERS_SYNC'=>'Users Sync',
     'LBL_USERS'=>'Users',
     'LBL_VERIFY_EMAIL_ADDRESS'=>'Checking for existing email entry...',
     'LBL_VERIFY_PORTAL_NAME'=>'Checking for existing portal name...',
-    'LBL_VIEW_IMAGE' => 'view',
+    'LBL_VIEW_IMAGE' => '이미지 보기',
     'LBL_VIEW_PDF_BUTTON_KEY' => 'P',
-    'LBL_VIEW_PDF_BUTTON_LABEL' => 'Print as PDF',
-    'LBL_VIEW_PDF_BUTTON_TITLE' => 'Print as PDF',
+    'LBL_VIEW_PDF_BUTTON_LABEL' => 'PDF로 출력하기',
+    'LBL_VIEW_PDF_BUTTON_TITLE' => 'PDF로 출력하기',
 
 
-    'LNK_ABOUT' => 'About',
-    'LNK_ADVANCED_SEARCH' => 'Advanced Search',
-    'LNK_BASIC_SEARCH' => 'Basic Search',
-    'LNK_SEARCH_FTS_VIEW_ALL' => 'View all results',
-    'LNK_SEARCH_NONFTS_VIEW_ALL' => 'Show All',
-    'LNK_CLOSE' => 'close',
-    'LBL_MODIFY_CURRENT_SEARCH'=> 'Modify current search',
-    'LNK_SAVED_VIEWS' => 'Layout Options',
-    'LNK_DELETE_ALL' => 'del all',
-    'LNK_DELETE' => 'delete',
-    'LNK_EDIT' => 'edit',
-    'LNK_GET_LATEST'=>'Get latest',
-    'LNK_GET_LATEST_TOOLTIP'=>'Replace with latest version',
-    'LNK_HELP' => 'Help',
-    'LNK_CREATE' => 'Create',
-    'LNK_LIST_END' => 'End',
-    'LNK_LIST_NEXT' => 'Next',
-    'LNK_LIST_PREVIOUS' => 'Previous',
-    'LNK_LIST_RETURN' => 'Return to List',
-    'LNK_LIST_START' => 'Start',
-    'LNK_LOAD_SIGNED'=>'Sign',
-    'LNK_LOAD_SIGNED_TOOLTIP'=>'Replace with signed document',
-    'LNK_PRINT' => 'Print',
-    'LNK_BACKTOTOP' => 'Back to top',
-    'LNK_REMOVE' => 'remove',
-    'LNK_RESUME' => 'Resume',
-    'LNK_VIEW_CHANGE_LOG' => 'View Change Log',
+    'LNK_ABOUT' => 'SugarCRM 정보',
+    'LNK_ADVANCED_SEARCH' => '고급검색',
+    'LNK_BASIC_SEARCH' => '기본검색',
+    'LNK_SEARCH_FTS_VIEW_ALL' => '전체검색결과보기',
+    'LNK_SEARCH_NONFTS_VIEW_ALL' => '전체보기',
+    'LNK_CLOSE' => '닫기',
+    'LBL_MODIFY_CURRENT_SEARCH'=> '현재 검색항목 수정하기',
+    'LNK_SAVED_VIEWS' => '표시항목옵션',
+    'LNK_DELETE_ALL' => '전체삭제',
+    'LNK_DELETE' => '삭제',
+    'LNK_EDIT' => '수정',
+    'LNK_GET_LATEST'=>'최신자료',
+    'LNK_GET_LATEST_TOOLTIP'=>'최신자료로 변경하기',
+    'LNK_HELP' => '도움말',
+    'LNK_CREATE' => '추가하기',
+    'LNK_LIST_END' => '마지막',
+    'LNK_LIST_NEXT' => '다음',
+    'LNK_LIST_PREVIOUS' => '이전',
+    'LNK_LIST_RETURN' => '목록으로',
+    'LNK_LIST_START' => '처음',
+    'LNK_LOAD_SIGNED'=>'서명하기',
+    'LNK_LOAD_SIGNED_TOOLTIP'=>'서명된 문서로 변경하기',
+    'LNK_PRINT' => '인쇄하기',
+    'LNK_BACKTOTOP' => '맨처음으로',
+    'LNK_REMOVE' => '제거',
+    'LNK_RESUME' => '이어하기',
+    'LNK_VIEW_CHANGE_LOG' => '수정기록확인하기',
 
 
     'NTC_CLICK_BACK' => 'Please click the browser back button and fix the error.',
     'NTC_DATE_FORMAT' => '(yyyy-mm-dd)',
     'NTC_DATE_TIME_FORMAT' => '(yyyy-mm-dd 24:00)',
-    'NTC_DELETE_CONFIRMATION_MULTIPLE' => 'Are you sure you want to delete selected record(s)?',
-    'NTC_TEMPLATE_IS_USED' => 'The template is used in at least one email marketing record. Are you sure you want to delete it?',
-    'NTC_TEMPLATES_IS_USED' => "The following templates are used in email marketing records. Are you sure you want to delete them?\n",
-    'NTC_DELETE_CONFIRMATION' => 'Are you sure you want to delete this record?',
-    'NTC_DELETE_CONFIRMATION_NUM' => 'Are you sure you want to delete the ',
-    'NTC_UPDATE_CONFIRMATION_NUM' => 'Are you sure you want to update the ',
+    'NTC_DELETE_CONFIRMATION_MULTIPLE' => '선택하신 자료를 정말로 지우시겠습니까?',
+    'NTC_TEMPLATE_IS_USED' => '현재 선택하신 탬플릿이 캠페인에서 사용중입니다. 정말로 지우시겠습니까?',
+    'NTC_TEMPLATES_IS_USED' => "현재 선택하신 탬플릿이 캠페인에서 사용중입니다. 정말로 지우시겠습니까?\n",
+    'NTC_DELETE_CONFIRMATION' => '선택하신 자료를 정말로 지우시겠습니까?',
+    'NTC_DELETE_CONFIRMATION_NUM' => '다음 자료를 정말로 지우시겠습니까? ',
+    'NTC_UPDATE_CONFIRMATION_NUM' => '다음 자료를 정말로 수정하시겠습니까? ',
     'NTC_DELETE_SELECTED_RECORDS' =>' selected record(s)?',
-    'NTC_LOGIN_MESSAGE' => 'Please enter your user name and password.',
-    'NTC_NO_ITEMS_DISPLAY' => 'none',
-    'NTC_REMOVE_CONFIRMATION' => 'Are you sure you want to remove this relationship? Only the relationship will be removed. The record will not be deleted.',
-    'NTC_REQUIRED' => 'Indicates required field',
-    'NTC_SUPPORT_SUGARCRM' => 'Support the SugarCRM open source project with a donation through PayPal - it\'s fast, free and secure!',
+    'NTC_LOGIN_MESSAGE' => '사용자 아이디와 비밀번호를 입력해주세요.',
+    'NTC_NO_ITEMS_DISPLAY' => '없음',
+    'NTC_REMOVE_CONFIRMATION' => '자료 구조관계를 정말로 지우시겠습니까? 관계도를 삭제해도 자료는 지워지지 않습니다.',
+    'NTC_REQUIRED' => '아이디가 필요한 항목',
+    'NTC_SUPPORT_SUGARCRM' => 'SugarCRM이 이 여러분의 사업에 도움을 주셨나요? SugarCRM 오픈소스 프로젝트에 도움을 주세요. 여러분의 도움은 더 좋은 제품을 만드는데 활용됩니다. PayPal을 통해 도움을 주실 수 있습니다.',
     'NTC_TIME_FORMAT' => '(24:00)',
-    'NTC_WELCOME' => 'Welcome',
+    'NTC_WELCOME' => '환영합니다',
     'NTC_YEAR_FORMAT' => '(yyyy)',
     'LOGIN_LOGO_ERROR'=> 'Please replace the SugarCRM logos.',
-    'ERROR_FULLY_EXPIRED'=> "Your company's license for SugarCRM has expired for more than 7 days and needs to be brought up to date. Only admins may login.",
-    'ERROR_LICENSE_EXPIRED'=> "Your company's license for SugarCRM needs to be updated. Only admins may login",
-    'ERROR_LICENSE_VALIDATION'=> "Your company's license for SugarCRM needs to be validated. Only admins may login",
-  'WARN_LICENSE_SEATS'=>  "Warning: The number of active users is already the maximum number of licenses allowed.",
-  'WARN_LICENSE_SEATS_MAXED'=>  "Warning: The number of active users exceeds the maximum number of licenses allowed.",
-    'WARN_ONLY_ADMINS'=> "Only admins may log in.",
-    'WARN_UNSAVED_CHANGES'=> "You are about to leave this record without saving any changes you may have made to the record. Are you sure you want to navigate away from this record?",
-    'ERROR_NO_RECORD' => 'Error retrieving record.  This record may be deleted or you may not be authorized to view it.',
-    'ERROR_TYPE_NOT_VALID' => 'Error. This type is not valid.',
-    'LBL_DUP_MERGE'=>'Find Duplicates',
+    'ERROR_FULLY_EXPIRED'=> "라이센스 사용기간이 만료된지 일주일이 지났습니다. 라이센스 사용기간을 갱신하여주세요. 현재 관리자만 접속가능합니다.",
+    'ERROR_LICENSE_EXPIRED'=> "라이센스 갱신이 필요합니다. 현재 관리자만 접속가능합니다.",
+    'ERROR_LICENSE_VALIDATION'=> "라이센스 인증이 필요합니다. 현재 관리자만 접속가능합니다.",
+  'WARN_LICENSE_SEATS'=>  "경고: 현재 적용된 라이센스의 최대 허용 접속자를 초과하였습니다. 상위 라이센스로 갱신이 필요합니다.",
+  'WARN_LICENSE_SEATS_MAXED'=>  "경고: 라이센스가 허용가능한 접속사용자를 초과하였습니다.",
+    'WARN_ONLY_ADMINS'=> "현재 관리자만 접속가능합니다.",
+    'WARN_UNSAVED_CHANGES'=> "현재 입력하신 정보를 저장하지 않은 상태에서 페이지를 이동하려합니다. 자료를 잃어버릴 수 있습니다. 정말로 이동하시겠습니까?",
+    'ERROR_NO_RECORD' => '자료를 가져오는데 문제가 발생하였습니다. 이 자료는 지워졌거나 읽기권한이 변경된 상태일 수 있습니다.',
+    'ERROR_TYPE_NOT_VALID' => '에러: 형식이 올바르지 않습니다.',
+    'LBL_DUP_MERGE'=>'복제된 자료찾기',
     'LBL_MANAGE_SUBSCRIPTIONS'=>'Manage Subscriptions',
     'LBL_MANAGE_SUBSCRIPTIONS_FOR'=>'Manage Subscriptions for ',
-    'LBL_SUBSCRIBE'=>'Subscribe',
-    'LBL_UNSUBSCRIBE'=>'Unsubscribe',
+    'LBL_SUBSCRIBE'=>'구독하기',
+    'LBL_UNSUBSCRIBE'=>'구독취소하기',
     // Ajax status strings
-    'LBL_LOADING' => 'Loading ...',
-    'LBL_SEARCHING' => 'Searching...',
-    'LBL_SAVING_LAYOUT' => 'Saving Layout ...',
-    'LBL_SAVED_LAYOUT' => 'Layout has been saved.',
-    'LBL_SAVED' => 'Saved',
-    'LBL_SAVING' => 'Saving',
-    'LBL_FAILED' => 'Failed!',
-    'LBL_DISPLAY_COLUMNS' => 'Display Columns',
-    'LBL_HIDE_COLUMNS' => 'Hide Columns',
+    'LBL_LOADING' => '잠시만기다려주세요 ...',
+    'LBL_SEARCHING' => '검색중입니다...',
+    'LBL_SAVING_LAYOUT' => '레이아웃 저장중 ...',
+    'LBL_SAVED_LAYOUT' => '레이아웃이 저장되었습니다.',
+    'LBL_SAVED' => '저장되었습니다.',
+    'LBL_SAVING' => '저장중',
+    'LBL_FAILED' => '실패하였습니다!',
+    'LBL_DISPLAY_COLUMNS' => '표시되는 항목',
+    'LBL_HIDE_COLUMNS' => '숨겨진 항목',
     'LBL_SEARCH_CRITERIA' => 'Search Criteria',
     'LBL_SAVED_VIEWS' => 'Saved Views',
-    'LBL_PROCESSING_REQUEST'=>'Processing..',
-    'LBL_REQUEST_PROCESSED'=>'Done',
-    'LBL_AJAX_FAILURE' => 'Ajax failure',
-    'LBL_MERGE_DUPLICATES'  => 'Merge',
-    'LBL_SAVED_SEARCH_SHORTCUT' => 'Saved Searches',
+    'LBL_PROCESSING_REQUEST'=>'처리중 ...',
+    'LBL_REQUEST_PROCESSED'=>'완료됨',
+    'LBL_AJAX_FAILURE' => '로딩실패',
+    //BEGIN SUGARCRM flav=pro ONLY
+    'LBL_OC_STATUS' => 'Offline Client Status',
+    'LBL_OC_STATUS_TEXT' => 'Indicates whether or not the current user is able to use an Offline Client.',
+    'LBL_OC_DEFAULT_STATUS' => '비활성화',
+    //END SUGARCRM flav=pro ONLY
+    'LBL_MERGE_DUPLICATES'  => '병합하기',
+    'LBL_SAVED_SEARCH_SHORTCUT' => '저장된 검색옵션',
     'LBL_SEARCH_POPULATE_ONLY'=> 'Perform a search using the search form above',
-    'LBL_DETAILVIEW'=>'Detail View',
-    'LBL_LISTVIEW'=>'List View',
-    'LBL_EDITVIEW'=>'Edit View',
-    'LBL_SEARCHFORM'=>'Search Form',
+    'LBL_DETAILVIEW'=>'세부정보화면',
+    'LBL_LISTVIEW'=>'리스트목록화면',
+    'LBL_EDITVIEW'=>'수정작성화면',
+    'LBL_SEARCHFORM'=>'검색양식',
     'LBL_SAVED_SEARCH_ERROR' => 'Please provide a name for this view.',
-    'LBL_DISPLAY_LOG' => 'Display Log',
+    'LBL_DISPLAY_LOG' => '변경기록보기',
     'ERROR_JS_ALERT_SYSTEM_CLASS' => 'System',
-    'ERROR_JS_ALERT_TIMEOUT_TITLE' => 'Session Timeout',
-    'ERROR_JS_ALERT_TIMEOUT_MSG_1' => 'Your session is about to timeout in 2 minutes. Please save your work.',
-    'ERROR_JS_ALERT_TIMEOUT_MSG_2' =>'Your session has timed out.',
-    'MSG_JS_ALERT_MTG_REMINDER_AGENDA' => "\nAgenda: ",
-    'MSG_JS_ALERT_MTG_REMINDER_MEETING' => 'Meeting',
-    'MSG_JS_ALERT_MTG_REMINDER_CALL' => 'Call',
-    'MSG_JS_ALERT_MTG_REMINDER_TIME' => 'Time: ',
-    'MSG_JS_ALERT_MTG_REMINDER_LOC' => 'Location: ',
-    'MSG_JS_ALERT_MTG_REMINDER_DESC' => 'Description: ',
-    'MSG_JS_ALERT_MTG_REMINDER_CALL_MSG' => "\nClick OK to view this call or click Cancel to dismiss this message.",
-  	'MSG_JS_ALERT_MTG_REMINDER_MEETING_MSG' => "\nClick OK to view this meeting or click Cancel to dismiss this message.",
- 	'MSG_LIST_VIEW_NO_RESULTS_BASIC' => "No results found.",
-	'MSG_LIST_VIEW_NO_RESULTS' => "No results found for <item1>",
- 	'MSG_LIST_VIEW_NO_RESULTS_SUBMSG' => "Create <item1> as a new <item2>",
-	'MSG_EMPTY_LIST_VIEW_NO_RESULTS' => "You currently have no records saved. <item2> or <item3> one now.",
-	'MSG_EMPTY_LIST_VIEW_NO_RESULTS_SUBMSG' =>	"<item4> to learn more about the <item1> module. In order to access more information, use the user menu drop down located on the main navigation bar to access Help.",
+    'ERROR_JS_ALERT_TIMEOUT_TITLE' => '세션이 만료되었습니다.',
+    'ERROR_JS_ALERT_TIMEOUT_MSG_1' => '현재 세션이 2분안에 만료될 예정입니다. 작업중인 자료를 저장해주세요.',
+    'ERROR_JS_ALERT_TIMEOUT_MSG_2' =>'세션이 만료되었습니다.',
+    'MSG_JS_ALERT_MTG_REMINDER_AGENDA' => "\n목차: ",
+    'MSG_JS_ALERT_MTG_REMINDER_MEETING' => '미팅',
+    'MSG_JS_ALERT_MTG_REMINDER_CALL' => '연락',
+    'MSG_JS_ALERT_MTG_REMINDER_TIME' => '시간: ',
+    'MSG_JS_ALERT_MTG_REMINDER_LOC' => '장소: ',
+    'MSG_JS_ALERT_MTG_REMINDER_DESC' => '상세정보: ',
+    'MSG_JS_ALERT_MTG_REMINDER_CALL_MSG' => "\n확인을 눌러 현재 예약된 전화상담을 확인하시거나 취소를 눌러 이 메세지를 지웁니다.",
+  	'MSG_JS_ALERT_MTG_REMINDER_MEETING_MSG' => "\n확인을 눌러 현재 예약된 미팅정보를 확인하시거나 취소를 눌러 이 메세지를 지웁니다.",
+ 	'MSG_LIST_VIEW_NO_RESULTS_BASIC' => "검색된 자료가 없습니다.",
+	'MSG_LIST_VIEW_NO_RESULTS' => "<item1>로 검색된 자료가 없습니다.",
+ 	'MSG_LIST_VIEW_NO_RESULTS_SUBMSG' => "<item1>을 새 <item2>로 추가하기",
+	'MSG_EMPTY_LIST_VIEW_NO_RESULTS' => "현재 저장된 자료가 없습니다. <item2> 혹은 <item3> 를 이용하여 자료를 등록해주세요.",
+	'MSG_EMPTY_LIST_VIEW_NO_RESULTS_SUBMSG' =>	"<item4>하면 <item1> 모듈에 관한 내용을 확인할 수 있습니다. 더 많은 정보를 얻으시려면 사용자메뉴에 도움말을 클릭하여 문의 주세요.",
 
-    'LBL_CLICK_HERE' => "Click here",
+    'LBL_CLICK_HERE' => "여기를 클릭",
     // contextMenu strings
-    'LBL_ADD_TO_FAVORITES' => 'Add to My Favorites',
-    'LBL_MARK_AS_FAVORITES' => 'Mark as Favorite',
-    'LBL_CREATE_CONTACT' => 'Create Contact',
-    'LBL_CREATE_CASE' => 'Create Case',
-    'LBL_CREATE_NOTE' => 'Create Note',
-    'LBL_CREATE_OPPORTUNITY' => 'Create Opportunity',
-    'LBL_SCHEDULE_CALL' => 'Log Call',
-    'LBL_SCHEDULE_MEETING' => 'Schedule Meeting',
-    'LBL_CREATE_TASK' => 'Create Task',
-    'LBL_REMOVE_FROM_FAVORITES' => 'Remove From My Favorites',
+    'LBL_ADD_TO_FAVORITES' => '내 즐겨찾기에 추가',
+    'LBL_MARK_AS_FAVORITES' => '즐겨찾기로 표시',
+    'LBL_CREATE_CONTACT' => '연락처 만들기',
+    'LBL_CREATE_CASE' => '고객 요청사례 만들기',
+    'LBL_CREATE_NOTE' => '메모 만들기',
+    'LBL_CREATE_OPPORTUNITY' => '영업기회 만들기',
+    'LBL_SCHEDULE_CALL' => '전화상담일정',
+    'LBL_SCHEDULE_MEETING' => '미팅일정',
+    'LBL_CREATE_TASK' => '업무내역 만들기',
+    'LBL_REMOVE_FROM_FAVORITES' => '내 즐겨찾기에서 삭제',
     //web to lead
-    'LBL_GENERATE_WEB_TO_LEAD_FORM' => 'Generate Form',
-    'LBL_SAVE_WEB_TO_LEAD_FORM' =>'Save Web To Lead Form',
+    'LBL_GENERATE_WEB_TO_LEAD_FORM' => '입력양식 만들기',
+    'LBL_SAVE_WEB_TO_LEAD_FORM' =>'잠재고객 등록양식으로 저장하기',
 
-    'LBL_PLEASE_SELECT' => 'Please Select',
-    'LBL_REDIRECT_URL'=>'Redirect URL',
-    'LBL_RELATED_CAMPAIGN' =>'Related campaign',
-    'LBL_ADD_ALL_LEAD_FIELDS' => 'Add All Fields',
-    'LBL_REMOVE_ALL_LEAD_FIELDS' => 'Remove All Fields',
-    'LBL_ONLY_IMAGE_ATTACHMENT' => 'Only image type attachment can be embedded',
-    'LBL_REMOVE' => 'Remove',
-    'LBL_TRAINING' => 'Support',
-    'ERR_DATABASE_CONN_DROPPED'=>'Error executing a query. Possibly, your database dropped the connection. Please refresh this page, you may need to restart you web server.',
-    'ERR_MSSQL_DB_CONTEXT' =>'Changed database context to',
-  'ERR_MSSQL_WARNING' =>'Warning:',
+    'LBL_PLEASE_SELECT' => '선택해 주세요',
+    'LBL_REDIRECT_URL'=>'이동될 페이지 주소',
+    'LBL_RELATED_CAMPAIGN' =>'연관된 캠페인',
+    'LBL_ADD_ALL_LEAD_FIELDS' => '모든 항목 추가',
+    'LBL_REMOVE_ALL_LEAD_FIELDS' => '모든 항목 삭제',
+    'LBL_ONLY_IMAGE_ATTACHMENT' => '이미지만 첨부 가능합니다.',
+    'LBL_REMOVE' => '삭제',
+    'LBL_TRAINING' => '슈가CRM 고객지원',
+    'ERR_DATABASE_CONN_DROPPED'=>'디비를 실행하는중에 문제가 발생했습니다. 페이지를 새로고침 해주세요. 만약 디비 접속이 끊어진 경우 서버를 재가동 시켜주세요.',
+    'ERR_MSSQL_DB_CONTEXT' =>'디비 context를 다음으로 변경합니다:',
+  'ERR_MSSQL_WARNING' =>'경고:',
 
     //Meta-Data framework
-    'ERR_MISSING_VARDEF_NAME' => 'Warning: field [[field]] does not have a mapped entry in [moduleDir] vardefs.php file',
-    'ERR_CANNOT_CREATE_METADATA_FILE' => 'Error: File [[file]] is missing.  Unable to create because no corresponding HTML file was found.',
-  'ERR_CANNOT_FIND_MODULE' => 'Error: Module [module] does not exist.',
-  'LBL_ALT_ADDRESS' => 'Other Address:',
+    'ERR_MISSING_VARDEF_NAME' => '경고: [[field]] 항목이 다음파일에 정의되지 않았습니다. [moduleDir] vardefs.php 파일을 확인해주세요.',
+    'ERR_CANNOT_CREATE_METADATA_FILE' => '에러: [[file]] 파일이 없습니다. 해당 HTML파일을 찾을 수 없어 생성할 수 없습니다.',
+  'ERR_CANNOT_FIND_MODULE' => '에러: [module] 모듈이 존재하지 않습니다.',
+  'LBL_ALT_ADDRESS' => '다른 주:',
     'ERR_SMARTY_UNEQUAL_RELATED_FIELD_PARAMETERS' => 'Error: There are an unequal number of arguments for the \'key\' and \'copy\' elements in the displayParams array.',
     'ERR_SMARTY_MISSING_DISPLAY_PARAMS' => 'Missing index in displayParams Array for: ',
 
@@ -2211,42 +2983,42 @@ $app_strings = array (
     'LBL_REMOVED_DASHLET' => 'Sugar Dashlet Removed',
 
     // MySugar Menu Options
-    'LBL_ADD_PAGE' => 'Add Page',
-    'LBL_DELETE_PAGE' => 'Delete Page',
-    'LBL_CHANGE_LAYOUT' => 'Change Layout',
-    'LBL_RENAME_PAGE' => 'Rename Page',
+    'LBL_ADD_PAGE' => '페이지 추가',
+    'LBL_DELETE_PAGE' => '페이지 삭제',
+    'LBL_CHANGE_LAYOUT' => '레이아웃 변경',
+    'LBL_RENAME_PAGE' => '페이지 이름변경',
 
-    'LBL_LOADING_PAGE' => 'Loading page, please wait...',
+    'LBL_LOADING_PAGE' => '로딩중입니다. 잠시만 기다려주세요...',
 
-    'LBL_RELOAD_PAGE' => 'Please <a href="javascript: window.location.reload()">reload the window</a> to use this Sugar Dashlet.',
-    'LBL_ADD_DASHLETS' => 'Add Dashlets',
-    'LBL_CLOSE_DASHLETS' => 'Close',
-    'LBL_OPTIONS' => 'Options',
-    'LBL_NUMBER_OF_COLUMNS' => 'Select the number of columns',
-    'LBL_1_COLUMN' => '1 Column',
-    'LBL_2_COLUMN' => '2 Column',
-    'LBL_3_COLUMN' => '3 Column',
-    'LBL_PAGE_NAME' => 'Page Name',
+    'LBL_RELOAD_PAGE' => '선택한 현황판을 사용하기 위해서, <a href="javascript: window.location.reload()">여기를 클릭</a>하여 현재 페이지를 새로고침하세요.',
+    'LBL_ADD_DASHLETS' => '현황판 추가하기',
+    'LBL_CLOSE_DASHLETS' => '닫기',
+    'LBL_OPTIONS' => '옵션',
+    'LBL_NUMBER_OF_COLUMNS' => '열 갯수를 선택하세요',
+    'LBL_1_COLUMN' => '1열',
+    'LBL_2_COLUMN' => '2열',
+    'LBL_3_COLUMN' => '3열',
+    'LBL_PAGE_NAME' => '페이지 이름',
 
-    'LBL_SEARCH_RESULTS' => 'Search Results',
-    'LBL_SEARCH_MODULES' => 'Modules',
-    'LBL_SEARCH_CHARTS' => 'Charts',
-    'LBL_SEARCH_REPORT_CHARTS' => 'Report Charts',
-    'LBL_SEARCH_TOOLS' => 'Tools',
-    'LBL_SEARCH_HELP_TITLE' => 'Search Tips',
-    'LBL_SEARCH_HELP_CLOSE_TOOLTIP' => 'Close',
-    'LBL_SEARCH_RESULTS_FOUND' => 'Search Results Found',
+    'LBL_SEARCH_RESULTS' => '검색된 결과',
+    'LBL_SEARCH_MODULES' => '모듈목록',
+    'LBL_SEARCH_CHARTS' => '차트목록',
+    'LBL_SEARCH_REPORT_CHARTS' => '보고서 차트',
+    'LBL_SEARCH_TOOLS' => '도구목록',
+    'LBL_SEARCH_HELP_TITLE' => '검색',
+    'LBL_SEARCH_HELP_CLOSE_TOOLTIP' => '닫기',
+    'LBL_SEARCH_RESULTS_FOUND' => '검색된 결과를 찾았습니다.',
     'LBL_SEARCH_RESULTS_TIME' => 'ms.',
-    'ERR_BLANK_PAGE_NAME' => 'Please enter a page name.',
+    'ERR_BLANK_PAGE_NAME' => '페이지명을 입력해주세요.',
     /* End MySugar Framework strings */
 
-    'LBL_NO_IMAGE' => 'No Image',
+    'LBL_NO_IMAGE' => '이미지 없음',
 
-    'LBL_MODULE' => 'Module',
+    'LBL_MODULE' => '모듈',
 
     //adding a label for address copy from left
-    'LBL_COPY_ADDRESS_FROM_LEFT' => 'Copy address from left:',
-    'LBL_SAVE_AND_CONTINUE' => 'Save and Continue',
+    'LBL_COPY_ADDRESS_FROM_LEFT' => '왼쪽주소복사:',
+    'LBL_SAVE_AND_CONTINUE' => '저장 후 다음 자료로 계속하기',
 
     'LBL_SEARCH_HELP_TEXT' => '<p><br /><strong>Multiselect controls</strong></p><ul><li>Click on the values to select an attribute.</li><li>Ctrl-click&nbsp;to&nbsp;select multiple. Mac users use CMD-click.</li><li>To select all values between two attributes,&nbsp; click first value&nbsp;and then shift-click last value.</li></ul><p><strong>Advanced Search & Layout Options</strong><br><br>Using the <b>Saved Search & Layout</b> option, you can save a set of search parameters and/or a custom List View layout in order to quickly obtain the desired search results in the future. You can save an unlimited number of custom searches and layouts. All saved searches appear by name in the Saved Searches list, with the last loaded saved search appearing at the top of the list.<br><br>To customize the List View layout, use the Hide Columns and Display Columns boxes to select which fields to display in the search results. For example, you can view or hide details such as the record name, and assigned user, and assigned team in the search results. To add a column to List View, select the field from the Hide Columns list and use the left arrow to move it to the Display Columns list. To remove a column from List View, select it from the Display Columns list and use the right arrow to move it to the Hide Columns list.<br><br>If you save layout settings, you will be able to load them at any time to view the search results in the custom layout.<br><br>To save and update a search and/or layout:<ol><li>Enter a name for the search results in the <b>Save this search as</b> field and click <b>Save</b>.The name now displays in the Saved Searches list adjacent to the <b>Clear</b> button.</li><li>To view a saved search, select it from the Saved Searches list. The search results are displayed in the List View.</li><li>To update the properties of a saved search, select the saved search from the list, enter the new search criteria and/or layout options in the Advanced Search area, and click <b>Update</b> next to <b>Modify Current Search</b>.</li><li>To delete a saved search, select it in the Saved Searches list, click <b>Delete</b> next to <b>Modify Current Search</b>, and then click <b>OK</b> to confirm the deletion.</li></ol><p><strong>Tips</strong><br><br>By using the % as a wildcard operator you can make your search more broad.  For example instead of just searching for results that equal "Apples" you could change your search to "Apples%" which would match all results that start with the word Apples but could contain other characters as well.</p>' ,
 
@@ -2261,6 +3033,12 @@ $app_strings = array (
     'ERR_STORE_FILE_MISSING' => 'Error: Unable to find Store implementation file',
 
     'LBL_MONITOR_ID' => 'Monitor Id',
+    //BEGIN SUGARCRM flav=pro ONLY
+    'LBL_TEAM_ID' => '부서 ID',
+    //END SUGARCRM flav=pro ONLY
+    //BEGIN SUGARCRM flav=pro || flav=sales ONLY
+    'LBL_SELECT_MODULE' => '모듈 선택:',
+    //END SUGARCRM flav=pro || flav=sales ONLY
     'LBL_USER_ID' => 'User Id',
     'LBL_MODULE_NAME' => 'Module Name',
     'LBL_ITEM_ID' => 'Item Id',
@@ -2271,9 +3049,64 @@ $app_strings = array (
     'LBL_VISIBLE' => 'Record Visible',
     'LBL_DATE_LAST_ACTION' => 'Date of Last Action',
 
+    //BEGIN SUGARCRM flav=pro ONLY
+    //Tracker Queries
+    'LBL_SQL_TEXT' => 'SQL Text',
+    'LBL_QUERY_HASH' => 'SQL Hash',
+    'LBL_SEC_TOTAL' => 'Total Seconds',
+    'LBL_SEC_AVG' => 'Average Seconds',
+    'LBL_RUN_COUNT' => 'Query Count',
 
+    //Tracker Sessions
+    'LBL_CLIENT_IP' => 'Client IP Address',
+    'LBL_DATE_START' => 'Date Start',
+    'LBL_ACTIVE' => 'Session Active',
+    'LBL_ROUNDTRIPS' => 'Action Count',
+    'LBL_SECONDS' => 'Seconds Active',
 
+    //Tracker Performance
+    'LBL_DB_ROUND_TRIPS' => 'Database Roundtrips',
+    'LBL_FILES_OPENED' => 'Files Accessed',
+    'LBL_MEMORY_USAGE' => 'Memory Usage (bytes)',
 
+    //Twitter Connector
+    'LBL_TWITTER_DATA_LOADING' => 'Loading Twitter Connector...',
+    'LBL_TWITTER_DATA_EMPTY' => 'No data availlable from Twitter',
+    //END SUGARCRM flav=pro ONLY
+
+    //BEGIN SUGARCRM flav!=com ONLY
+    'LBL_PLUGIN_OUTLOOK_NAME' => 'Sugar Plug-in for Outlook',
+    'LBL_PLUGIN_OUTLOOK_DESC' => 'Integrate Sugar e-mail and calendar information with Microsoft Outlook.',
+    'LBL_PLUGIN_WORD_NAME' => 'Sugar Plug-in for Word',
+    'LBL_PLUGIN_WORD_DESC' => 'Automatically populate information from SugarCRM into form letters, direct mail and other Microsoft documents.',
+    'LBL_PLUGIN_EXCEL_NAME' => 'Sugar Plug-in for Excel',
+    'LBL_PLUGIN_EXCEL_DESC' => 'Integrate Sugar with spreadsheets for better analysis of key metrics.',
+    'LBL_PLUGINS_TITLE' => 'Sugar Plug-ins for Microsoft Office<sup>TM</sup>',
+    'LBL_PLUGINS_DESC' => 'Read about the plug-in features within the <a href="https://www.sugarcrm.com/crm/support/documentation/SugarPlugIns">Plug-ins Documentation</a>.',
+    //END SUGARCRM flav!=com ONLY
+
+    //BEGIN SUGARCRM flav=ent ONLY
+    'LBL_PLUGINS_LOTUS_TITLE' => 'Sugar Plug-ins for Lotus Notes<sup>TM</sup>',
+    'LBL_PLUGIN_LOTUS_NAME' => 'Sugar Plug-in For Lotus Notes',
+    'LBL_PLUGIN_LOTUS_DESC' => 'Integrate Sugar with Lotus Notes.',
+    //END SUGARCRM flav=ent ONLY
+
+    //BEGIN SUGARCRM flav=dce ONLY
+    //DCE
+    'LBL_DCEDEPLOY_LABEL' => 'Deploy',
+    'LBL_DCEDELETE_LABEL' => 'Delete',
+    'LBL_DCEUPGRADE_LABEL' => 'Upgrade',
+    'LBL_DCEARCHIVE_BUTTON' => 'Archive',
+    'LBL_DCECLONE_BUTTON' => 'Clone',
+    'LBL_DCERECOVER_BUTTON' => 'Recover',
+    'LBL_DCESUPPORTUSER_ENABLE_BUTTON' => 'Enable Support User',
+    'LBL_DCESUPPORTUSER_DISABLE_BUTTON' => 'Disable Support User',
+    'LBL_DCECONVERTINSTANCE_BUTTON' => 'Convert Instance',
+    'LBL_DCETEMPLATE_CONVERT' => 'Convert Template',
+    'LBL_DCERESTARTEMAIL_LABEL' => 'Resend Email',
+    'LBL_DCERESTARTACTION_LABEL' => 'Restart Action',
+    'LNK_DCEUPGRADE_SEARCH' => 'Upgrade Search',
+    //END SUGARCRM flav=dce ONLY
 
     //jc:#12287 - For javascript validation messages
     'MSG_IS_NOT_BEFORE' => 'is not before',
@@ -2285,14 +3118,14 @@ $app_strings = array (
     'LBL_PORTAL_WELCOME_TITLE' => 'Welcome to Sugar Portal 5.1.0',
     'LBL_PORTAL_WELCOME_INFO' => 'Sugar Portal is a framework which provides real-time view of cases, bugs & newsletters etc to customers. This is an external facing interface to Sugar that can be deployed within any website.  Stay tuned for more customer self service features like Project Management and Forums in our future releases.',
     'LBL_LIST' => 'List',
-    'LBL_CREATE_CASE' => 'Create Case',
-    'LBL_CREATE_BUG' => 'Create Bug',
-    'LBL_NO_RECORDS_FOUND' => '- 0 Records Found -',
+    'LBL_CREATE_CASE' => '고객요청사례 만들기',
+    'LBL_CREATE_BUG' => '결함요청사례 만들기',
+    'LBL_NO_RECORDS_FOUND' => '- 발견된 자료가 없습니다 -',
 
-    'DATA_TYPE_DUE' => 'Due:',
-    'DATA_TYPE_START' => 'Start:',
-    'DATA_TYPE_SENT' => 'Sent:',
-    'DATA_TYPE_MODIFIED' => 'Modified:',
+    'DATA_TYPE_DUE' => '예정일자:',
+    'DATA_TYPE_START' => '시작일자:',
+    'DATA_TYPE_SENT' => '발송일자:',
+    'DATA_TYPE_MODIFIED' => '수정일자:',
 
 
     //jchi at 608/06/2008 10913am china time for the bug 12253.
